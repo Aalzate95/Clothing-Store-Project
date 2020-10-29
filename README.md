@@ -1,3 +1,21 @@
+# OLEO
+
+## Mistery Machine
+
+### Integrantes:
+* Alexander Alzate
+* Rogwi Cajas
+* Isaac Solis
+* Angie Tuarez
+
+## Descripción del proyecto
+
+
+## Enlace al diseño del sitio web (al documento dentro del repositorio)
+## Enlace a la plantilla de Bootstrap
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
