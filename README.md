@@ -14,6 +14,10 @@ Diseño e implementación de una tienda virtual de ropa deportiva.
 ## Enlace al diseño del sitio web (al documento dentro del repositorio)
 ## Enlace a la plantilla de Bootstrap
 
+[Plantilla](https://themebubble.com/demo/webify/shop/)
+
+[Plantilla Admin](https://startbootstrap.com/theme/sb-admin-2)
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
