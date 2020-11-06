@@ -1,4 +1,4 @@
-# OLEO
+# Speed Sport
 
 ## Mistery Machine
 
@@ -9,7 +9,7 @@
 * Angie Tuarez
 
 ## Descripción del proyecto
-
+Diseño e implementación de una tienda virtual de ropa deportiva.
 
 ## Enlace al diseño del sitio web (al documento dentro del repositorio)
 ## Enlace a la plantilla de Bootstrap
