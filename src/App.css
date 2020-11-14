@@ -1,23 +1,30 @@
-.App {
+
+
+
+header{
+  padding: 60px;
   text-align: center;
-  display:grid
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }
+
 
 .NavegationBar {
   background-color: #525252;
   display:block;
-  float:left;
   color: white;
   width: 100%;
   margin:0
 }
 
-.NavegationBar>ul{
+.NavegationBar>ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
 .NavegationBar>ul>li{
   float: left;
   display: block;
@@ -32,13 +39,7 @@
 .NavegationBar>ul>li>a:hover {
   color: #111111;
 }
-.Header{
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
+
 .MyFooter{
   background-color: #525252;
   position: fixed;

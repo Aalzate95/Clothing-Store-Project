@@ -10,43 +10,40 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Router>
-        <div className="NavegationBar">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            
-            <li>
-              <Link to="/news">News</Link>
-            </li>
-            <li>
-              <Link to="/developmentTeam">DevelopmentTeam</Link>
-            </li>
-            <li>
-              <Link to="/aboutUs">AboutUs</Link>
-            </li>
-          </ul>
+    <div className="container-flex">
+        <Router>
+          <div className="NavegationBar">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/news">News</Link>
+              </li>
+              <li>
+                <Link to="/developmentTeam">DevelopmentTeam</Link>
+              </li>
+              <li>
+                <Link to="/aboutUs">AboutUs</Link>
+              </li>
+            </ul>
+          </div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route exact path="/news">
+              <News />
+            </Route>
+            <Route exact path="/developmentTeam">
+              <DevelopmentTeam />
+            </Route>
+            <Route exact path="/aboutUs">
+              <AboutUs />
+            </Route>
+          </Switch>
 
-        </div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/news">
-            <News />
-          </Route>
-          <Route exact path="/developmentTeam">
-            <DevelopmentTeam />
-          </Route>
-          <Route exact path="/aboutUs">
-            <AboutUs />
-          </Route>
-        </Switch>
-
-    </Router>
+      </Router>
     <footer>
       <MyFooter/>
     </footer>
