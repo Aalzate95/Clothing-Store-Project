@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './views/Home'
 import Shop from './views/Shop'
 import Clothing from './views/Clothing'
