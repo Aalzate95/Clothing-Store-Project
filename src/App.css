@@ -1,45 +1,38 @@
 
-
-
-header{
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: white;
-  font-size: 30px;
-}
-
-
-.NavegationBar {
-  background-color: #525252;
+#NavegationBar {
   display:block;
-  color: white;
   width: 100%;
-  margin:0
+  margin:0;
+  text-align: right;
+  height: 70px;
 }
 
-.NavegationBar>ul {
+#NavegationBar>ul {
+  padding-top: 10px;
+  display:inline-flex;
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
-.NavegationBar>ul>li{
-  float: left;
-  display: block;
-  text-align: center;
+#NavegationBar>ul>li>a {
+  color:gray;
+  text-decoration: none
+}
+
+#NavegationBar>ul>li>a:hover {
+  color: rgb(78, 78, 78);
+}
+
+
+#NavegationBar>ul>li{
   padding: 16px;
   text-decoration: none;
 }
-.NavegationBar>ul>li>a{
-  color:white;
-}
 
-.NavegationBar>ul>li>a:hover {
-  color: #111111;
+#Banner{
+  height:300px;
+  background: gray;
 }
-
 .MyFooter{
   background-color: #525252;
   position: fixed;
