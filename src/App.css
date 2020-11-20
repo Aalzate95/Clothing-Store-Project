@@ -52,9 +52,11 @@
 .FooterTarget{
   margin-top: 20px;
 }
-/*shop view*/
+/*****      shop view       ****/
+
 .Shop-body{
   background-color: white;
+  margin-bottom: 300px;
 }
 .Shop-banner{
   width: 100%;
@@ -82,15 +84,46 @@
   min-width: 100%;
 }
 
+/*Categoria*/
+.Seleccion{
+  margin-top: 68px;
+  text-align: left;
+}
+.op>p:hover{
+  color: rgb(78, 78, 78);
+}
+.op>p{
+  margin:0px;
+  color:gray;
+  cursor: pointer;
+}
 .Categoria{
-  margin-bottom: 186px;
+  text-align: center;
 }
-.Cards{
+.Categoria>h2{
+  padding: 15px 0px;
+}
+/**CARD**/
+.card-data{
+  text-align: center; 
+}
+.card-detalle, .card-nombre{
   display: flex;
-  
+  justify-content: space-between;
+  background-color: #EAEAE9;
+  margin: 0px;
 }
-.card-img{
-  height: 50%;
-  width: 100%;
+.card-boton{
+  background-color: #525252;
+  margin:0px;
+  color: white;
+}
+.card-boton:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+.card-boton >p{
+  margin: 0px;
+}
 
-}
+
