@@ -8,13 +8,24 @@ export default class Cards  extends React.Component{
     render(){
         const filtrado = this.props.cards.filter(c => c.categoria===this.props.categoria);
         console.log(filtrado);
-        return filtrado.map(card =>
-            <Card 
-                card={card}
-                key={card.id}
-            />
-               
-        );
+        if(filtrado.length===0){
+            return this.props.cards.map(card =>
+                <Card 
+                    card={card}
+                    key={card.id}
+                />
+
+            );
+        }else{
+            return filtrado.map(card =>
+                <Card 
+                    card={card}
+                    key={card.id}
+                />
+                   
+            );
+        }
+        
     }
 }
 Cards.propTypes = {
