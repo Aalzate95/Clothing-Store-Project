@@ -1,29 +1,13 @@
 import React from 'react'
-
+import './styles/Banner.css'
 export default class Banner extends React.Component{
-    constructor(props){
-        super(props);
-        this.state={
-            listImages : []
-        }
-    }
-    importImages =(r)=> {
-        return r.keys().map(r);
-    }
-
-    componentDidMount =()=> {
-        let images = this.importImages(require.context('../images/banner', true, /\.jpg$/));
-        this.setState({listImages:images})
-    }
-
-   
-
-    render(){   
-        
+    render(){
+        const {url, titulo, subtitulo} = this.props
         return(
-                <div className="" id="Banner">
-                    
-                </div>      
-        )
+            <div className = "Banner" style={{'backgroundImage':`url( ${url})`}}>
+                <h3>{titulo}</h3>
+                <p>{subtitulo}</p>
+            </div>
+            )
     }
 }

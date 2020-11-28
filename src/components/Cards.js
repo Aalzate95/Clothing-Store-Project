@@ -28,6 +28,7 @@ export default class Cards  extends React.Component{
         
     }
 }
+
 Cards.propTypes = {
     cards: PropTypes.array.isRequired,
     categoria: PropTypes.string.isRequired

@@ -1,0 +1,24 @@
+.Banner{
+    position:relative;
+    text-align: justify;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    max-width:100%;
+}
+
+.Banner h3{
+    position:absolute;
+    bottom:150px;
+    left:20px;
+}
+.Banner p{
+    font-size:18px;
+    position:absolute;
+    bottom:100px;
+    left:30px;
+}
+
+
+

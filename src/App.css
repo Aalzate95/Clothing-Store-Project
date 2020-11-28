@@ -41,7 +41,6 @@
 
 #MyFooter {
   background-color: #525252;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -126,4 +125,24 @@
   margin: 0px;
 }
 
+[name="Cabecera"]{
+  display:grid;
+  grid-template-columns:100%;
+}
 
+.principalTendencias{
+  display: grid;
+  margin: 20px 10% 0 10%;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.Home{
+  text-align: center;
+  margin-bottom: 20px;
+}
+[name="TxtTendencias"]{
+  color: gray;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  margin: 20px 10%;
+}

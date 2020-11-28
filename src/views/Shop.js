@@ -2,7 +2,7 @@ import React from 'react'
 import lprods from '../sample/cards.json'
 import Categoria from '../components/Categoria.js'
 
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+
 
 export default class Shop extends React.Component{
     constructor(props){
