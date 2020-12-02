@@ -54,15 +54,8 @@
             "descuento":0.1,
             "precio":1000,
             "isOferta": true
-        },
-        "4":{
-            "name":"nombre",
-            "categorie": "guantes",
-            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
-            "descuento":0.1,
-            "precio":1000,
-            "isOferta": true
         }
+        
     }
 
 
