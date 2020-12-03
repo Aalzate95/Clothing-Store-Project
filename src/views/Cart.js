@@ -16,11 +16,12 @@ export default class Cart extends React.Component{
 
     }
     borrarItem(key){
-        //busco el tr con ese key
+        //busco el tr con el id Key, key es el id del item en el .json
         
-        let trs= document.getElementsByClassName('Tabla-item');
+        let trs= document.getElementById(key);
         //elimino de 'TABLA'
-        document.getElementsByClassName('T-body')[0].removeChild(trs[Number(key)]);//probar Number
+        //document.getElementsByClassName('T-body')[0].removeChild(trs[Number(key)]);
+        document.getElementsByClassName('T-body')[0].removeChild(trs);
         //borro del state
         delete this.state.items2[key];//
         console.log(this.state.items2);
@@ -81,7 +82,7 @@ export default class Cart extends React.Component{
                         {
                         Object.keys(items).map((indice)=>{
                             return(
-                                <tr key={indice} className="Tabla-item">
+                                <tr key={indice} id={indice}>
                                     <td className="item-remove"><a onClick={() => this.borrarItem(indice)} className="remove">X</a></td>
                                     <td className="item-miniatura"><img src={items[indice].url}/></td>
                                     <td className="item-nombre">{items[indice].name}</td>

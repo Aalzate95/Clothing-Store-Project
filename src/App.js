@@ -49,7 +49,9 @@ function App() {
           <Switch>
             
             <Route exact path="/">
-              <Home />
+              <Home 
+                items2 = {state.items}
+              />
             </Route>
 
             <Route exact path="/shop">
