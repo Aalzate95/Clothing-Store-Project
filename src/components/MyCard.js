@@ -81,7 +81,3 @@ export default class MyCard extends React.Component{
             )
     }
 }
-
-/*<div name="MyCardDescription">
-                        
-                    </div> */

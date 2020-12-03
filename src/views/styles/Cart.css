@@ -1,0 +1,39 @@
+.Cart-Body{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+.Cart-Body>div{
+    margin-bottom: 20px;
+}
+.Cart-Body>p,.Cart-Body>div, .Totals{
+    grid-column: 2;
+
+}
+.Tabla, .Totals{
+    grid-column: 2;
+    margin-bottom: 10px;
+}
+.Tabla th, .Tabla td, .Totals th, .Totals td{
+    border: solid 1px rgb(201, 194, 194);
+    margin-bottom: 20px;
+    
+}
+.item-miniatura{
+    
+}
+.item-miniatura>img{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+.item-remove{
+    text-align: center;
+}
+.remove{
+    margin: 0px 5px 0px 5px
+}
+.remove:hover{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}

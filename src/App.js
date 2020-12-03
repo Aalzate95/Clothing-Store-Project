@@ -7,6 +7,7 @@ import DevelopmentTeam from './views/DevelopmentTeam'
 import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
 import Login from './views/Login'
+import Cart from './views/Cart'
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
@@ -32,6 +33,9 @@ function App() {
               <li >
                 <Link to="/login">Login</Link>
               </li>
+              <li>
+                <Link to="/cart">Cart</Link>
+              </li>
             </ul>
           </div>
           <Switch>
@@ -56,6 +60,9 @@ function App() {
 
             <Route exact path="/login">
               <Login />
+            </Route>
+            <Route exact path="/cart">
+              <Cart/>
             </Route>
           </Switch>
 
