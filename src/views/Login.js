@@ -6,10 +6,10 @@ export default class Login extends React.Component{
             <div className="Login">
                 <div className="LoginCard">
                     <h1>Login</h1>
-                        <input type="text" name="username" placeholder="Username" required></input>
-                        <input type="password" name="password" placeholder="Password" required></input>
-                        <input type="submit"></input>
-                        <a name="RecuperarContraseña" href="asd">Recuperar contraseña ?</a>
+                    <input type="text" name="username" placeholder="Username" required></input>
+                    <input type="password" name="password" placeholder="Password" required></input>
+                    <input type="submit"></input>
+                    <a name="RecuperarContraseña" href="asd">Recuperar contraseña ?</a>
                 </div>
             </div>
             )

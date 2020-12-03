@@ -2,7 +2,7 @@ import React from 'react'
 import Categoria from '../components/Categoria.js'
 
 import dataPrincipal from '../data/shop.json'
-
+import FitBanner from '../components/FitBanner'
 
 export default class Shop extends React.Component{
     constructor(props){
@@ -32,12 +32,10 @@ export default class Shop extends React.Component{
         
         return(
             <div className="Shop">
-                <div>
-                    <div className="Shop-banner">
-                        <img className="Shop-crop" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="banner-shop"></img>
-                        <h1>Catálogo</h1>
-                    </div>
-                </div>
+                <FitBanner
+                url = 'https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg'
+                />
+                <h1>Catálogo</h1>
                 <div className="Shop-body">
                         {categoria}
 
