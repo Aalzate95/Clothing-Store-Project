@@ -11,13 +11,6 @@ export default class Home extends React.Component{
             tendencias: dataPrincipal.tendencias
         }
     }
-
-    
-    renderTendencias = () =>{
-        const {tendencias} = this.state;
-        
-        
-    }
    
     render(){
         const {banner,tendencias} = this.state;
