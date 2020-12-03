@@ -29,9 +29,14 @@ export default class MyCard extends React.Component{
 
         }
     }
+    
     render(){
         //agregar el dict 
-        const {url,categorie,precio,descuento,name} = this.props
+        const {url,categorie,precio,descuento,name, isOferta,items2} = this.props
+
+        const item ={"name": name, "categorie": categorie, "url": url, "descuento":descuento, "precio":precio, "isOferta": isOferta};
+        
+        //items2 llega aqui, ahora agregar onclick a agregar al carrito para que sea agregado a items2
         return(
             
                 <div className="MyCard">
@@ -56,7 +61,7 @@ export default class MyCard extends React.Component{
                         <img src={url} alt={name}/>
                         <div id="Overlay">
                             <div className="Añadir">
-                                <button>Añadir al carrito</button>
+                                <button onClick={() =>this.props.items2[this.props.indice]=item}>Añadir al carrito</button>
                             </div>
                             <div className="VistaRapida" >
                                 <button id="myBtn" className="myBtn">Vista Rapida</button>

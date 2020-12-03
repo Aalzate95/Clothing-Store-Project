@@ -2,7 +2,7 @@ import React from 'react'
 import Categoria from '../components/Categoria.js'
 import './styles/Shop.css'
 import dataPrincipal from '../data/shop.json'
-
+import PropTypes from 'prop-types'
 
 export default class Shop extends React.Component{
     constructor(props){
@@ -11,7 +11,8 @@ export default class Shop extends React.Component{
         this.state ={
             items: dataPrincipal.productos,
             categories:  dataPrincipal.categories,
-            categorie: ""
+            categorie: "",
+            items2: props.items2 //Carrito, borrar llamar  aprops
         };
         
     }
@@ -22,12 +23,16 @@ export default class Shop extends React.Component{
         const items =this.state.items;
         const categories =this.state.categories;
         const categorie = this.state.categorie;
-                     
+        
+        
+        //items2 si llega aqui
+
         //posiblemente borrar
         let categoria;
         categoria = <Categoria
                 prods = {items}
                 categorie ={categorie}
+                items2 ={this.state.items2}//
         />
         
         return(
@@ -70,29 +75,6 @@ export default class Shop extends React.Component{
     }
     
 }
-/*
-{
-                                Object.keys(categories).map((indice) => {
-                                    return(
-                                        <div className="op" >
-                                            <p className="cat">{categories[indice].title}</p>
-                                        </div>
-                                    )
-                                }
-
-                                )
-                            }
-*/
-//https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg
-//https://image.freepik.com/foto-gratis/tienda-ropa-tienda-ropa-perchas-tienda-boutique-moderna_1150-8886.jpg
-/**
- * <div className="op" onClick={this.handleDeportiva}>
-                                <p>Camisa Deportiva</p>
-                            </div>
-                            <div className="op" onClick={this.handleCasual}>
-                                <p>Camisa Casual</p>
-                            </div>
-                            <div className="op" onClick={this.handleAll}>
-                                <p>Todos</p>
-                            </div>
- */
+Shop.propTypes = {
+    items2: PropTypes.object.isRequired
+}

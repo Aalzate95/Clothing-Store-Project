@@ -10,11 +10,15 @@ export default class Cards  extends React.Component{
             return Object.keys(items).map(indice =>
                 <MyCard
                         key = {indice}
+                        indice ={indice}
                         name = {items[indice].name}
                         categorie = {items[indice].categorie}
                         url = {items[indice].url}
                         precio = {items[indice].precio}
                         descuento = {items[indice].descuento}
+                        isOferta ={this.props.isOferta}
+                        items2= {this.props.items2}
+                        
                 /> 
 
             );
@@ -24,7 +28,8 @@ export default class Cards  extends React.Component{
 }
 
 Cards.propTypes = {
-    cards: PropTypes.object.isRequired  
+    cards: PropTypes.object.isRequired,
+    items2:  PropTypes.object.isRequired 
 }
 /*
 render(){

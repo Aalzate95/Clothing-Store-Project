@@ -1,8 +1,8 @@
 import React from 'react'
 import data from '../data/Cart.json'
-
 import Banner from '../components/Banner'
 import './styles/Cart.css'
+import PropTypes from 'prop-types'
 
 export default class Cart extends React.Component{
     constructor(props){
@@ -10,15 +10,20 @@ export default class Cart extends React.Component{
         this.actualizar = this.actualizar.bind(this);
         this.borrarItem = this.borrarItem.bind(this);
         this.state = {
-            items : data
+            items : data, /*state con todos los items*/
+            items2 : props.items2/*State que viene desde app*/
         }
 
     }
     borrarItem(key){
         //busco el tr con ese key
+        
         let trs= document.getElementsByClassName('Tabla-item');
         //elimino de 'TABLA'
         document.getElementsByClassName('T-body')[0].removeChild(trs[key]);
+        //borro del state
+        delete this.state.items2[key];
+        console.log(this.state.items2);
     }
     actualizar(){
 
@@ -39,12 +44,9 @@ export default class Cart extends React.Component{
         total.innerText = suma;
         let subtotal = document.getElementsByClassName('Totals-sub')[0];
         subtotal.innerText =suma;
-        
-
-
     }
     render(){
-        const items=this.state.items;
+        const items=this.state.items2;
         const total= calcularTotal();
         
         function calcularTotal(){
@@ -113,4 +115,8 @@ export default class Cart extends React.Component{
             </div>
         )
     }
+}
+
+Cart.propTypes = {
+    items2: PropTypes.object.isRequired
 }

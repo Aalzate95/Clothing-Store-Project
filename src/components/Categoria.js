@@ -6,6 +6,9 @@ import './styles/Categoria.css'
 export default class Categoria extends React.Component{
     
     render(){
+        
+        //aqui llega items2
+
         //aqui eleguir cual categoria imprimir
         if(this.props.categorie===""){
             return (
@@ -14,6 +17,7 @@ export default class Categoria extends React.Component{
                     <div className="Categoria-items">
                         <Cards
                             cards = {this.props.prods}
+                            items2 = {this.props.items2}
                         />
                         
                     </div>
@@ -33,6 +37,7 @@ export default class Categoria extends React.Component{
                     <div className="Categoria-items">
                         <Cards
                             cards = {filtrado}
+                            items2 = {this.props.items2}
                         />
                         
                     </div>
@@ -44,5 +49,6 @@ export default class Categoria extends React.Component{
 }
 Categoria.propTypes = {
     prods: PropTypes.object.isRequired,
-    categorie: PropTypes.string.isRequired
+    categorie: PropTypes.string.isRequired,
+    items2: PropTypes.object.isRequired
 }
