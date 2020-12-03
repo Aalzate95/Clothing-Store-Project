@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../data/aboutUs.json'
-
+import './styles/AboutUs.css'
 export default class AboutUs extends React.Component{
     constructor(props){
         super(props);
@@ -15,9 +15,10 @@ export default class AboutUs extends React.Component{
                 <div>
                     <div className="About-banner">
                         <img className="About-crop" src="https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg"   alt="banner-about"></img>
-                        <h1>About Us</h1>
+                        
                     </div>
                 </div>
+                <h1>About Us</h1>
                 <div className="About-body">
                     <div>
                         <h3>¿Quiénes Somos?</h3>

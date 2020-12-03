@@ -6,9 +6,38 @@ export default class Developer extends React.Component{
     render(){
         const {nombre,edad,origen,detalle,skills,url,img} = this.props;
         return(
-                <div className="Dev">
+            <div className="Developer">
+                <div className="card-container">
+                    <img className="round" src={img} alt="user" />
+                    <h3>{nombre}</h3>
+                    <h6>{origen}</h6>
+                    <p>{detalle}</p>
+                    <div className="buttons">
+                        <a className="primary ghost" href={url}>
+                            Follow
+                        </a>
+                    </div>
+                    <div className="skills">
+                        <h6>Skills</h6>
+                        <ul>
+                        {
+                            Object.keys(skills).map((i)=>{
+                                return(
+                                <li key={i}>{"> "+skills[i]}</li> 
+                                )
+                            })
+                        }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+               
+        )
+    }
+}
+ /* <div className="Dev">
                     <div className="Dev-img">
-                        <img src={img}/>
+                        <img alt={img} src={img}/>
                     </div>
                     <div className="Dev-data">
                         <h3>{nombre}</h3>
@@ -25,13 +54,9 @@ export default class Developer extends React.Component{
                                 )
                             })
                         }
-
                         </ul>
                         
                         <p>Portfolio : <a href={url}>{url}</a></p>
                         
                     </div>
-                </div>   
-            )
-    }
-}
+                </div>    */

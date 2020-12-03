@@ -1,6 +1,6 @@
 import React from 'react'
 import Categoria from '../components/Categoria.js'
-
+import './styles/Shop.css'
 import dataPrincipal from '../data/shop.json'
 
 
@@ -35,9 +35,10 @@ export default class Shop extends React.Component{
                 <div>
                     <div className="Shop-banner">
                         <img className="Shop-crop" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="banner-shop"></img>
-                        <h1>Catálogo</h1>
+                        
                     </div>
                 </div>
+                <h1>Catálogo</h1>
                 <div className="Shop-body">
                         {categoria}
 
