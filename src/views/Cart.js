@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../data/Cart.json'
-import MyCard from '../components/MyCard'
+
 import Banner from '../components/Banner'
 import './styles/Cart.css'
 
