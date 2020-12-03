@@ -1,0 +1,34 @@
+.Categoria>h2{
+    text-align: center;
+}
+
+
+
+/*xm y sm mobile devices*/
+
+@media only screen and (max-width: 768px) {
+    .Categoria-items{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (min-width: 600px){
+    .Categoria{
+        grid-column: 2;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .Categoria-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .Categoria-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+   

@@ -1,0 +1,65 @@
+{
+    "categories":{
+        "0":{
+            "title":"camisetas",
+            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
+        },
+        "1":{
+            "title":"pantalonetas",
+            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
+            
+        },
+        "2":{
+            "title":"calcetines",
+            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
+           
+        },
+        "3":{
+            "title":"guantes",
+            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
+           
+        }
+    },
+    "productos":{
+        "0":{
+            "name":"Azmodan",
+            "categorie": "camisetas",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.2,
+            "precio":1000,
+            "isOferta": true
+        },
+        "1":{
+            "name":"nombre",
+            "categorie": "pantalonetas",
+            "url": "https://p1.pxfuel.com/preview/966/722/399/tennis-man-background-young.jpg",
+            "descuento":0.3,
+            "precio":1000,
+            "isOferta": false
+        },
+        "2":{
+            "name":"nombre",
+            "categorie": "calcetines",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.4,
+            "precio":1000,
+            "isOferta": true
+        },
+        "3":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "4":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        }
+    }
+}

@@ -1,11 +1,33 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import PropTypes from 'prop-types'
-import Card from './Card'
+import MyCard from './MyCard'
 
 export default class Cards  extends React.Component{
-    /* filtro por categoria*/
     render(){
+        //const filtrado = this.props.cards.filter(c => c.categoria===this.props.categoria);
+            const items = this.props.cards;
+            return Object.keys(items).map(indice =>
+                <MyCard
+                        key = {indice}
+                        name = {items[indice].name}
+                        categorie = {items[indice].categorie}
+                        url = {items[indice].url}
+                        precio = {items[indice].precio}
+                        descuento = {items[indice].descuento}
+                /> 
+
+            );
+        
+        
+    }
+}
+
+Cards.propTypes = {
+    cards: PropTypes.object.isRequired  
+}
+/*
+render(){
         const filtrado = this.props.cards.filter(c => c.categoria===this.props.categoria);
         console.log(filtrado);
         if(filtrado.length===0){
@@ -27,9 +49,4 @@ export default class Cards  extends React.Component{
         }
         
     }
-}
-
-Cards.propTypes = {
-    cards: PropTypes.array.isRequired,
-    categoria: PropTypes.string.isRequired
-}
+*/

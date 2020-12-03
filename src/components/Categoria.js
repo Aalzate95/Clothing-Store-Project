@@ -1,27 +1,48 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Cards from './Cards.js'
+import './styles/Categoria.css'
 
 export default class Categoria extends React.Component{
     
     render(){
-        //hacer aqui el filtrado, para mostrar numero de resultados por categoria
-        return (
-            <div className="Categoria container col-12 col-sm-8  col-md-9 col-lg-10"  >
-                <h2>{this.props.categoria}</h2>
-                <div className="row">
-                    <Cards
-                        cards ={this.props.prods}
-                        categoria={this.props.categoria}
-                    />
+        //aqui eleguir cual categoria imprimir
+        if(this.props.categorie===""){
+            return (
+                <div className="Categoria">
+                    <h2>{"PRODUCTOS"}</h2>
+                    <div className="Categoria-items">
+                        <Cards
+                            cards = {this.props.prods}
+                        />
+                        
+                    </div>
                     
                 </div>
-                
-            </div>
-        );
+            );
+        }else{
+            let filtrado ={};
+            for(let it in this.props.prods){
+                if(this.props.prods[it].categorie===this.props.categorie){
+                    filtrado[it]=this.props.prods[it];
+                }
+            }
+            return (
+                <div className="Categoria">
+                    <h2>{this.props.categorie.toUpperCase()}</h2>
+                    <div className="Categoria-items">
+                        <Cards
+                            cards = {filtrado}
+                        />
+                        
+                    </div>
+                    
+                </div>
+            );
+            }
     }
 }
 Categoria.propTypes = {
-    prods: PropTypes.array.isRequired,
-    categoria: PropTypes.string.isRequired
+    prods: PropTypes.object.isRequired,
+    categorie: PropTypes.string.isRequired
 }
