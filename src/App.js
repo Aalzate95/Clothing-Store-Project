@@ -8,6 +8,7 @@ import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
 import Login from './views/Login'
 import Cart from './views/Cart'
+import ContactUs from './views/ContactUs'
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
@@ -29,6 +30,9 @@ function App() {
               </li>
               <li >
                 <Link to="/aboutUs">AboutUs</Link>
+              </li>
+              <li>
+                <Link to="/contactUs">ContactUs</Link>
               </li>
               <li >
                 <Link to="/login">Login</Link>
@@ -57,7 +61,9 @@ function App() {
             <Route exact path="/aboutUs">
               <AboutUs />
             </Route>
-
+            <Route>
+              <ContactUs/>
+            </Route>
             <Route exact path="/login">
               <Login />
             </Route>
