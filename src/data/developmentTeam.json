@@ -1,13 +1,14 @@
 {
     "0":{
         "nombre": "Alexander Quintero",
-        "edad": "22",
-        "origen": "NA",
-        "detalle": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident esse ipsa reiciendis fugiat asperiores mollitia eveniet, blanditiis quasi cumque rerum molestias suscipit nam expedita, earum saepe deleniti ad perspiciatis architecto natus dolorum. Temporibus veniam quia assumenda ex eius iusto repellendus iure animi recusandae, ullam consectetur numquam! Cumque, ab voluptatem, harum esse at non adipisci nesciunt soluta reiciendis minus velit doloribus nulla tempore similique quaerat illo tenetur quasi delectus numquam recusandae reprehenderit ullam quos. Perferendis aliquam minima voluptas, eaque cupiditate dolorum!",
+        "edad": "25",
+        "origen": "Colombia, Buga",
+        "detalle": "Desarrollador de Software",
         "skills":{
-            "0": "skill 1",
-            "1": "skill 2",
-            "2": "skill 3"
+            "0": "HTML",
+            "1": "JavaScript",
+            "2": "React",
+            "3":"CSS"
         },
         "url": "https://github.com/Aalzate95",
         "img": "https://avatars0.githubusercontent.com/u/57695981?s=400&u=12ee8a8d3dfa95d4680b9b55346af961b2c9e646&v=4"
@@ -16,11 +17,12 @@
         "nombre": "Rogwi Cajas Correa",
         "edad": "22",
         "origen": "Ecuador, Zamora",
-        "detalle": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident esse ipsa reiciendis fugiat asperiores mollitia eveniet, blanditiis quasi cumque rerum molestias suscipit nam expedita, earum saepe deleniti ad perspiciatis architecto natus dolorum. Temporibus veniam quia assumenda ex eius iusto repellendus iure animi recusandae, ullam consectetur numquam! Cumque, ab voluptatem, harum esse at non adipisci nesciunt soluta reiciendis minus velit doloribus nulla tempore similique quaerat illo tenetur quasi delectus numquam recusandae reprehenderit ullam quos. Perferendis aliquam minima voluptas, eaque cupiditate dolorum!",
+        "detalle": "Desarrollador de Software",
         "skills": {
-            "0": "skill 1",
-            "1": "skill 2",
-            "2": "skill 3"
+            "0": "HTML",
+            "1": "JavaScript",
+            "2": "React",
+            "3":"CSS"
         },
         "url": "https://github.com/RogwiCajas",
         "img": "https://avatars1.githubusercontent.com/u/33600400?s=400&u=0f19e0f546f24914d7b71c7422a0d487e990dbfa&v=4"

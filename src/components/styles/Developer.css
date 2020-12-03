@@ -1,5 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/*
+body {
+	 background-color: #28223F; 
+	font-family: Montserrat, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	min-height: 100vh;
+	margin: 0;
+}
+
+h3 {
+	margin: 10px 0;
+}
+
+h6 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+*/
+.Developer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-container {
+	background-color: #252523;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	position: relative;
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+}
+
+
+.card-container .round {
+	border: 1px solid white;
+	border-radius: 50%;
+    padding: 7px;
+    width: 50%;
+    height: auto;
+}
+
+a.primary {
+	background-color: #FFF4F0;
+	border: 1px solid white;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+a.primary.ghost {
+	background-color: #5e5e5e;
+	color: white;
+}
+
+a.primary.ghost:hover {
+	background-color: #818181;
+}
+
+.skills {
+    background-color:#3b3b3b;
+    color:#B3B8CD;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+}
+
+.skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.skills ul li {
+	border: 1px solid white;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+}
+
+
+
+
 /*organizacion general*/
-.Dev{
+/* .Dev{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
@@ -16,9 +118,11 @@
     border-radius: 10px;
 
 }
+
 .Dev-data{
     grid-column: 1;
 }
+
 .Dev-data>h3{
     text-align: center;
 }
@@ -42,7 +146,7 @@
     list-style: none;
 }
 /*mobile devices*/
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .Dev{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         display: grid;
@@ -55,4 +159,4 @@
     .Dev-data{
         grid-column: 2;
     }
-  } 
+  }  */ 

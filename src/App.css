@@ -125,5 +125,21 @@
 }
 
 .LoginCard a[name="RecuperarContraseña"]{
+ 
+}
 
+.DevTeam{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.DevTeam h1{
+  margin:2% 10% 2% 10%;
+  border-bottom: 1px solid;
+}
+
+.Dev-body{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin:0 10% 0 10%;
 }
