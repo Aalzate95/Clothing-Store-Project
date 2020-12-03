@@ -1,38 +1,35 @@
 import React from 'react'
-import lprods from '../sample/cards.json'
 import Categoria from '../components/Categoria.js'
 
+import dataPrincipal from '../data/shop.json'
 
 
 export default class Shop extends React.Component{
     constructor(props){
         super(props);
-        this.handleCasual = this.handleCasual.bind(this);
-        this.handleDeportiva = this.handleDeportiva.bind(this);
-        this.handleAll = this.handleAll.bind(this);
+        this.setCategorie = this.setCategorie.bind(this);
         this.state ={
-            lprods: lprods,
-            categories: "" 
+            items: dataPrincipal.productos,
+            categories:  dataPrincipal.categories,
+            categorie: ""
         };
         
     }
-    /*agregar aqui categorias*/
-    handleCasual(){
-        this.setState({categories: "Camisa casual"});
+    setCategorie(cat) {
+        this.setState({categorie: cat})
     }
-    handleDeportiva(){
-        this.setState({categories: "Camisa Deportiva"});
-    }
-    handleAll(){
-        this.setState({categories: ""});
-    }
-    
     render() {
+        const items =this.state.items;
+        const categories =this.state.categories;
+        const categorie = this.state.categorie;
+                     
+        //posiblemente borrar
         let categoria;
         categoria = <Categoria
-                prods = {this.state.lprods}
-                categoria ={this.state.categories}
-                />
+                prods = {items}
+                categorie ={categorie}
+        />
+        
         return(
             <div className="Shop">
                 <div>
@@ -41,25 +38,29 @@ export default class Shop extends React.Component{
                         <h1>Catálogo</h1>
                     </div>
                 </div>
-                <div className="Shop-body col-12">
-                    <div className="row">
-
+                <div className="Shop-body">
                         {categoria}
 
-                        <div className="Seleccion container col-12 col-sm-4 col-md-3 col-lg-2">
+                        <div id="Seleccion">
                             <h3>Categorias</h3>
-                            <div className="op" onClick={this.handleDeportiva}>
-                                <p>Camisa Deportiva</p>
+                            <div className="op" onClick={() =>this.setCategorie("")}>
+                                <p>Todas</p>
                             </div>
-                            <div className="op" onClick={this.handleCasual}>
-                                <p>Camisa Casual</p>
-                            </div>
-                            <div className="op" onClick={this.handleAll}>
-                                <p>Todos</p>
-                            </div>
+                            {
+                                Object.keys(categories).map((indice) => {
+                                    return(
+                                        <div className="op" key={indice}  onClick={() =>this.setCategorie(categories[indice].title)}>
+                                            <p>{categories[indice].title}</p>
+                                        </div>
+                                        
+                                    )
+                                }
+
+                                )
+                            }
+                            
                             
                         </div>
-                    </div>
                     
                 </div>
                    
@@ -68,6 +69,29 @@ export default class Shop extends React.Component{
     }
     
 }
+/*
+{
+                                Object.keys(categories).map((indice) => {
+                                    return(
+                                        <div className="op" >
+                                            <p className="cat">{categories[indice].title}</p>
+                                        </div>
+                                    )
+                                }
+
+                                )
+                            }
+*/
 //https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg
 //https://image.freepik.com/foto-gratis/tienda-ropa-tienda-ropa-perchas-tienda-boutique-moderna_1150-8886.jpg
-        
+/**
+ * <div className="op" onClick={this.handleDeportiva}>
+                                <p>Camisa Deportiva</p>
+                            </div>
+                            <div className="op" onClick={this.handleCasual}>
+                                <p>Camisa Casual</p>
+                            </div>
+                            <div className="op" onClick={this.handleAll}>
+                                <p>Todos</p>
+                            </div>
+ */

@@ -10,6 +10,7 @@ import MyFooter from './components/MyFooter'
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
+  //crear un estado con un  dict, 
   return (
     <div className="container-flex">
         <Router>
@@ -37,7 +38,9 @@ function App() {
               <Home />
             </Route>
             <Route exact path="/shop">
-              <Shop />
+              <Shop 
+                /* aqui se envia el state del carrito*/
+              />
             </Route>
             <Route exact path="/Clothing">
               <Clothing />
