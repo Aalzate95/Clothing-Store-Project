@@ -16,7 +16,7 @@ export default class Cards  extends React.Component{
                         url = {items[indice].url}
                         precio = {items[indice].precio}
                         descuento = {items[indice].descuento}
-                        isOferta ={this.props.isOferta}
+                        isOferta ={items[indice].isOferta}//
                         items2= {this.props.items2}
                         
                 /> 

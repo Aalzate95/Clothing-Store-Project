@@ -20,9 +20,9 @@ export default class Cart extends React.Component{
         
         let trs= document.getElementsByClassName('Tabla-item');
         //elimino de 'TABLA'
-        document.getElementsByClassName('T-body')[0].removeChild(trs[key]);
+        document.getElementsByClassName('T-body')[0].removeChild(trs[Number(key)]);//probar Number
         //borro del state
-        delete this.state.items2[key];
+        delete this.state.items2[key];//
         console.log(this.state.items2);
     }
     actualizar(){
@@ -48,6 +48,8 @@ export default class Cart extends React.Component{
     render(){
         const items=this.state.items2;
         const total= calcularTotal();
+        
+        console.log(items);//
         
         function calcularTotal(){
             let suma=0;

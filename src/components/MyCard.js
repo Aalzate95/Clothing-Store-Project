@@ -34,7 +34,12 @@ export default class MyCard extends React.Component{
         //agregar el dict 
         const {url,categorie,precio,descuento,name, isOferta,items2} = this.props
 
-        const item ={"name": name, "categorie": categorie, "url": url, "descuento":descuento, "precio":precio, "isOferta": isOferta};
+        const item ={"name": name, 
+                    "categorie": categorie, 
+                    "url": url, 
+                    "descuento":descuento, 
+                    "precio":precio, 
+                    "isOferta": isOferta};
         
         //items2 llega aqui, ahora agregar onclick a agregar al carrito para que sea agregado a items2
         return(
