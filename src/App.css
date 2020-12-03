@@ -154,18 +154,26 @@
 
 .Login{
   padding:20% 0 20% 0;
+  background: lightgray;
 }
 .LoginCard{
-  width: 300px;
+  background: white;
+  width: 30%;
   margin: 0 auto;
+  padding:5% 2% 5% 2%;
   font-family: Tahoma, Geneva, sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; 
 }
 
 .LoginCard h1 {
   text-align: center;
   color: #4d4d4d;
   font-size: 24px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 10px 0;
+  border-bottom: 1px solid;
+  border-color:#4d4d4d;
+  margin-bottom: 30px;
 }
 
 .LoginCard input[type="password"],
@@ -185,4 +193,8 @@
   cursor: pointer;
   font-weight: bold;
   color: #ffffff;
+}
+
+.LoginCard a[name="RecuperarContraseña"]{
+
 }
