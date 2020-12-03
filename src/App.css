@@ -3,6 +3,10 @@
 *{
   font-family: Roboto, sans-serif;
 }
+.App{
+  display: grid;
+  grid-template-rows:70px 100% 10%;
+}
 #NavegationBar {
   display:block;
   width: 100%;
@@ -36,12 +40,7 @@
   padding: 16px;
   text-decoration: none;
 }
-/*
-#Banner{
-  height:300px;
-  background: gray;
-}
-*/
+
 
 #MyFooter {
   background-color: #525252;
@@ -142,4 +141,14 @@
   display:grid;
   grid-template-columns:1fr 1fr;
   margin:0 10% 0 10%;
+}
+
+/*mobile devices*/
+@media only screen and (max-width: 600px) {
+  .Dev-body{
+    display:flex;
+    flex-direction: column;
+  }
+  
+  
 }

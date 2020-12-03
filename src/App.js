@@ -13,7 +13,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 function App() {
   //crear un estado con un  dict, 
   return (
-    <div className="container-flex">
+    <div className="App">
         <Router>
           <div  id = "NavegationBar">
             <ul>
@@ -60,7 +60,7 @@ function App() {
           </Switch>
 
       </Router>
-    <footer>
+    <footer className="Footer">
       <MyFooter/>
     </footer>
     </div>
