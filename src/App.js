@@ -19,7 +19,7 @@ function App() {
     items: data //items que van al carrito, carrito: 
   }
   return (
-    <div className="container-flex">
+    <div className="App">
         <Router>
           <div  id = "NavegationBar">
             <ul>
@@ -82,7 +82,7 @@ function App() {
           </Switch>
 
       </Router>
-    <footer>
+    <footer className="Footer">
       <MyFooter/>
     </footer>
     </div>

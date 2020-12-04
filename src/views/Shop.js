@@ -4,6 +4,7 @@ import './styles/Shop.css'
 import dataPrincipal from '../data/shop.json'
 import PropTypes from 'prop-types'
 
+
 export default class Shop extends React.Component{
     constructor(props){
         super(props);
@@ -37,12 +38,14 @@ export default class Shop extends React.Component{
         
         return(
             <div className="Shop">
+
                 <div>
                     <div className="Shop-banner">
                         <img className="Shop-crop" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="banner-shop"></img>
                         
                     </div>
                 </div>
+
                 <h1>Catálogo</h1>
                 <div className="Shop-body">
                         {categoria}

@@ -1,6 +1,8 @@
 import React from 'react'
 import data from '../data/aboutUs.json'
 import './styles/AboutUs.css'
+
+
 export default class AboutUs extends React.Component{
     constructor(props){
         super(props);
@@ -11,6 +13,7 @@ export default class AboutUs extends React.Component{
     render(){
         const general = this.state.general;
         return(
+
             <div className="About">
                 <div>
                     <div className="About-banner">
@@ -21,16 +24,15 @@ export default class AboutUs extends React.Component{
                 <h1>About Us</h1>
                 <div className="About-body">
                     <div>
+
                         <h3>¿Quiénes Somos?</h3>
                         <p>{general.resumen}</p>
                         <h3>¿Dónde Encontrarnos?</h3>
                         <p>{"Encuentrenos "+general.horarios}</p>
                         <p>{general.detalle}</p>
-                        <div>
+                        <div className="AboutUs-Map">
                             <iframe src={general.mapa}  title="Punto-Fiec" width="100%" height="500px" ></iframe>
                         </div>
-
-                    </div>
                     
                 </div>
             </div>

@@ -1,6 +1,7 @@
 {
     "0":{
-        "nombre": "Alexander Quintero",
+
+        "nombre": "Alexander Alzate",
         "edad": "25",
         "origen": "Colombia, Buga",
         "detalle": "Desarrollador de Software",
@@ -8,7 +9,8 @@
             "0": "HTML",
             "1": "JavaScript",
             "2": "React",
-            "3":"CSS"
+            "3": "CSS"
+
         },
         "url": "https://github.com/Aalzate95",
         "img": "https://avatars0.githubusercontent.com/u/57695981?s=400&u=12ee8a8d3dfa95d4680b9b55346af961b2c9e646&v=4"
@@ -22,7 +24,7 @@
             "0": "HTML",
             "1": "JavaScript",
             "2": "React",
-            "3":"CSS"
+            "3": "CSS"
         },
         "url": "https://github.com/RogwiCajas",
         "img": "https://avatars1.githubusercontent.com/u/33600400?s=400&u=0f19e0f546f24914d7b71c7422a0d487e990dbfa&v=4"

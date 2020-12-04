@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Banner.css'
-export default class Banner extends React.Component{
+export default class HomeBanner extends React.Component{
     render(){
         const {url, titulo, subtitulo} = this.props
         return(

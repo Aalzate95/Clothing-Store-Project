@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../components/Banner'
+import HomeBanner from '../components/HomeBanner'
 import dataPrincipal from '../data/principal.json'
 import MyCard from '../components/MyCard'
 
@@ -11,13 +11,6 @@ export default class Home extends React.Component{
             tendencias: dataPrincipal.tendencias
         }
     }
-
-    
-    renderTendencias = () =>{
-        const {tendencias} = this.state;
-        
-        
-    }
    
     render(){
         const {banner,tendencias} = this.state;
@@ -25,7 +18,7 @@ export default class Home extends React.Component{
             
             <div className="Home">
                 <div name= "Cabecera">
-                    <Banner 
+                    <HomeBanner
                         titulo = {banner.title}
                         subtitulo = {banner.subtitle}
                         url = {banner.url}

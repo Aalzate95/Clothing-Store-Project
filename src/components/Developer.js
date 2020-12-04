@@ -4,7 +4,7 @@ import './styles/Developer.css'
 export default class Developer extends React.Component{
           
     render(){
-        const {nombre,edad,origen,detalle,skills,url,img} = this.props;
+        const {nombre,origen,detalle,skills,url,img} = this.props;
         return(
             <div className="Developer">
                 <div className="card-container">

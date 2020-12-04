@@ -2,6 +2,7 @@ import React from 'react'
 import data from '../data/developmentTeam.json'
 import Developer from '../components/Developer'
 import Banner from '../components/Banner'
+
 export default class DevelopmentTeam extends React.Component{
     constructor(props){
         super(props);

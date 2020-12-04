@@ -13,7 +13,6 @@
   text-align: right;
   height: 70px;
   top: 0;
-  position: sticky;
   z-index: 999;
   background-color: white;
 }
@@ -33,7 +32,6 @@
 #NavegationBar>ul>li>a:hover {
   color: rgb(78, 78, 78);
 }
-
 
 #NavegationBar>ul>li{
   padding: 16px;
@@ -80,14 +78,16 @@
 }
 
 .Login{
-  padding:20% 0 20% 0;
+  display:grid;
+  grid-template-columns:100%;
+  padding:5% 0 5% 0;
   background: lightgray;
 }
 .LoginCard{
   background: white;
-  width: 30%;
+  width: 350px;
   margin: 0 auto;
-  padding:5% 2% 5% 2%;
+  padding:0% 2% 0% 2%;
   font-family: Tahoma, Geneva, sans-serif;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s; 
@@ -126,6 +126,7 @@
  
 }
 
+
 .DevTeam{
   text-align: center;
   margin-bottom: 10%;
@@ -140,6 +141,39 @@
   display:grid;
   grid-template-columns:1fr 1fr;
   margin:0 10% 0 10%;
+}
+
+=======
+
+.DevTeam{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.DevTeam h1{
+  margin:2% 10% 2% 10%;
+  border-bottom: 1px solid;
+}
+
+.Dev-body{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin:0 10% 0 10%;
+}
+
+.AboutUs{
+  text-align: center;
+}
+
+.AboutUs-body{
+  margin:5% 0 0 0;
+}
+
+.AboutUs-body h3{
+  font-weight: bold;
+}
+.AboutUs-Map{
+  margin: 5% 15% 0 15%;
 }
 
 /*mobile devices*/
