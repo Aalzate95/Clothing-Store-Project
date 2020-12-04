@@ -27,7 +27,7 @@
   }
   .About>h1{
     margin:2% 10% 2% 10%;
-    text-align: center;
+    text-align: letf;
     border-bottom: 1px solid;
   }
   .About-body{
@@ -46,6 +46,7 @@
   .About-body>div>h3{
     text-align: center;
     margin-bottom: 20px;
+    border: solid 1px;
   }
   .About-body>div>div{
     display: flex; 
@@ -53,5 +54,4 @@
   }   
   .About-body>div>div>iframe{
     width: 100%; 
-    
   } 
