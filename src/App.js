@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './views/Home'
 import Shop from './views/Shop'
+import Noticias from './views/Noticias'
 import DevelopmentTeam from './views/DevelopmentTeam'
 import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
@@ -31,6 +32,9 @@ function App() {
               </li>
               <li >
                 <Link to="/developmentTeam">DevelopmentTeam</Link>
+              </li>
+              <li >
+                <Link to="/noticias">Noticias</Link>
               </li>
               <li >
                 <Link to="/aboutUs">AboutUs</Link>
@@ -64,7 +68,9 @@ function App() {
             <Route exact path="/developmentTeam">
               <DevelopmentTeam />
             </Route>
-
+            <Route exact path="/noticias">
+              <Noticias />
+            </Route>
             <Route exact path="/aboutUs">
               <AboutUs />
             </Route>
