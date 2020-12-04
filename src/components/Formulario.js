@@ -11,7 +11,8 @@ export default  class Formulario extends React.Component{
             lugar:"",
             fecha: "",
             correo:"",
-            about:""
+            about:"",
+            genero:""
         }
     }
     // < >
