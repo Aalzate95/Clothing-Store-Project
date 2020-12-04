@@ -48,7 +48,7 @@ export default class Home extends React.Component{
                 </div>
                 <section id="anuncios">
                     <div className="anuncios">
-                    <img src="https://www.deportesapalategui.com/blog/wp-content/uploads/2014/03/asics-compresion.jpg"></img>
+                    <img alt= "anuncio" src="https://www.deportesapalategui.com/blog/wp-content/uploads/2014/03/asics-compresion.jpg"></img>
                     </div>
                 </section>
 
