@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
 }
+.Cart>h1{
+    grid-column: 2;
+    text-align: center;
+}
 .Cart-Body>div{
     margin-bottom: 20px;
 }

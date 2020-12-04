@@ -5,7 +5,8 @@
         "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
         "descuento":0.2,
         "precio":1000,
-        "isOferta": true
+        "isOferta": true,
+        "cantidad": 1
     },
     "1":{
         "name":"nombre",
@@ -13,7 +14,8 @@
         "url": "https://p1.pxfuel.com/preview/966/722/399/tennis-man-background-young.jpg",
         "descuento":0.3,
         "precio":1000,
-        "isOferta": false
+        "isOferta": false,
+        "cantidad": 1
     },
     "2":{
         "name":"nombre",
@@ -21,6 +23,7 @@
         "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
         "descuento":0.4,
         "precio":1000,
-        "isOferta": true
+        "isOferta": true,
+        "cantidad": 1
     }
 }
