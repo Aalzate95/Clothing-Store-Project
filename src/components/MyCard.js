@@ -39,7 +39,8 @@ export default class MyCard extends React.Component{
                     "url": url, 
                     "descuento":descuento, 
                     "precio":precio, 
-                    "isOferta": isOferta};
+                    "isOferta": isOferta,
+                    "cantidad" : 1};
         
         return(
             

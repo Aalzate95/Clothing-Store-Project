@@ -34,22 +34,22 @@ function App() {
               <ul>
                 
                 <li >
-                  <Link to="/shop">Comprar</Link>
+                  <Link to="/Comprar">Comprar</Link>
                 </li>
                 <li >
-                  <Link to="/developmentTeam">Desarrolladores</Link>
+                  <Link to="/Desarrolladores">Desarrolladores</Link>
                 </li>
                 <li >
-                  <Link to="/aboutUs">Conocenos</Link>
+                  <Link to="/Conocenos">Conocenos</Link>
                 </li>
                 <li>
-                  <Link to="/contactUs">Contactanos</Link>
+                  <Link to="/Contactanos">Contactanos</Link>
                 </li>
                 <li>
                   <Link to="/noticias">Noticias</Link>
                 </li>
                 <li >
-                  <Link to="/login">Ingresar</Link>
+                  <Link to="/Ingresar">Ingresar</Link>
                 </li>
                 <li>
                   <Link to="/cart"><div className="CarritoElementos"><img className = 'ICarrito'src="https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/20314567451554468896-512.png" alt="cart"/></div></Link>
@@ -65,29 +65,29 @@ function App() {
               />
             </Route>
 
-            <Route exact path="/shop">
+            <Route exact path="/Comprar">
               <Shop 
                 /* aqui se envia el state del carrito*/
                 items2 = {state.items} //carrito : this.state.carrito
               />
             </Route>
             
-            <Route exact path="/developmentTeam">
+            <Route exact path="/Desarrolladores">
               <DevelopmentTeam />
             </Route>
             <Route exact path="/noticias">
               <Noticias />
             </Route>
-            <Route exact path="/aboutUs">
+            <Route exact path="/Conocenos">
               <AboutUs />
             </Route>
-            <Route  exact path="/contactUs">
+            <Route  exact path="/Contactanos">
               <ContactUs/>
             </Route>
             <Route  exact path="/noticias">
               <Noticias/>
             </Route>
-            <Route exact path="/login">
+            <Route exact path="/Ingresar">
               <Login />
             </Route>
             <Route exact path="/cart">
