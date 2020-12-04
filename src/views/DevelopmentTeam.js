@@ -36,6 +36,7 @@ export default class DevelopmentTeam extends React.Component{
                                     origen = {devs[indice].origen}
                                     detalle = {devs[indice].detalle}
                                     skills = {devs[indice].skills}
+                                    redes = {devs[indice].redes}
                                     url = {devs[indice].url}
                                     img ={devs[indice].img}
                                 />

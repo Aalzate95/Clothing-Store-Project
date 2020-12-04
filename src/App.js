@@ -30,7 +30,7 @@ function App() {
 
               </li>
             </ul>
-            <div id = "NavegationBar">
+            <nav id = "NavegationBar">
               <ul>
                 
                 <li >
@@ -55,7 +55,7 @@ function App() {
                   <Link to="/cart"><div className="CarritoElementos"><img className = 'ICarrito'src="https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/20314567451554468896-512.png" alt="cart"/></div></Link>
                 </li>
               </ul>
-            </div>
+            </nav>
           </div>
           <Switch>
             
