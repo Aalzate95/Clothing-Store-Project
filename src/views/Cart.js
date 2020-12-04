@@ -36,7 +36,7 @@ export default class Cart extends React.Component{
         let trs=document.getElementById(key);
         //obtemgp el value
         let c =trs.getElementsByClassName('cantidad')[0].value;
-        console.log(c);
+        
         this.state.items2[key].cantidad=c;
     }
     actualizar(){
@@ -46,13 +46,17 @@ export default class Cart extends React.Component{
         let sub = document.getElementsByClassName('item-subtotal');
         let cantidad =document.getElementsByClassName('cantidad');
         let precio = document.getElementsByClassName('item-precio');
+        
         //Recorro y calculo los precios
         let total =document.getElementsByClassName("Totals-tot")[0];
         let suma=0;
         for(let i=0;i<cantidad.length ; i++){//cambiar para que se trabaje con el objeto carro
-            let calculo = Number(precio[i].textContent)*cantidad[i].value;
+            //ahora item-item subtotal se actualiza solo
+            let calculo = Number(precio[i].textContent)*cantidad[i].value; 
             sub[i].innerText= calculo;
             suma+=calculo;
+           
+    
         }
         //Actualizar Tabla de totales
         total.innerText = suma;
@@ -161,11 +165,11 @@ export default class Cart extends React.Component{
                             return(
                                 <tr key={indice} id={indice}>
                                     <td className="item-remove"><a onClick={() => this.borrarItem(indice)} className="remove">X</a></td>
-                                    <td className="item-miniatura"><img src={items[indice].url}/></td>
+                                    <td className="item-miniatura"><img style={{borderRadius: "5px"}} src={items[indice].url}/></td>
                                     <td className="item-nombre">{items[indice].name}</td>
                                     <td className="item-precio">{(items[indice].precio)-((items[indice].precio)*items[indice].descuento)}</td>
                                     <td className="item-cantidad"><input onChange={()=> this.cantidad(indice)} type="Number" min="1" placeholder="1"  className="cantidad" /></td>
-                                    <td className="item-subtotal">{(items[indice].precio)-((items[indice].precio)*items[indice].descuento)}</td>
+                                    <td className="item-subtotal">{((items[indice].precio)-((items[indice].precio)*items[indice].descuento))*items[indice].cantidad}</td>
                                 </tr>
                             )
                         })

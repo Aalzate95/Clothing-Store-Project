@@ -5,6 +5,10 @@
 .Cart>h1{
     grid-column: 2;
     text-align: center;
+    
+    margin:2% 10% 2% 10%;
+    border-bottom: 1px solid;
+      
 }
 .Cart-Body>div{
     margin-bottom: 20px;
@@ -23,9 +27,6 @@
     margin-bottom: 20px;
     
 }
-.item-miniatura{
-    
-}
 .item-miniatura>img{
     width: 80px;
     height: 80px;
@@ -41,4 +42,10 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+}
+.item-cantidad{
+    width:15%
+}
+.item-cantidad>input{
+    width: 100%
 }
