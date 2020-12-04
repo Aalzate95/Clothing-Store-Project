@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 .Developer{
+	margin-top: 3%;
     display:flex;
     flex-direction: column;
     align-items: center;
