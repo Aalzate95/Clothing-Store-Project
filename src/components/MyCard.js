@@ -39,7 +39,8 @@ export default class MyCard extends React.Component{
                     "url": url, 
                     "descuento":descuento, 
                     "precio":precio, 
-                    "isOferta": isOferta};
+                    "isOferta": isOferta,
+                    "cantidad" : 1};
         
         //items2 llega aqui, ahora agregar onclick a agregar al carrito para que sea agregado a items2
         return(
