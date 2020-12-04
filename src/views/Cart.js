@@ -3,18 +3,24 @@ import data from '../data/Cart.json'
 import HomeBanner from '../components/HomeBanner'
 import './styles/Cart.css'
 import PropTypes from 'prop-types'
+import Checkin from '../components/Checkin'
 
 export default class Cart extends React.Component{
     constructor(props){
         super(props);
         this.actualizar = this.actualizar.bind(this);
         this.borrarItem = this.borrarItem.bind(this);
+        this.comprar = this.comprar.bind(this);
+        this.cantidad =this.cantidad.bind(this);
         this.state = {
-            items : data, /*state con todos los items*/
-            items2 : props.items2/*State que viene desde app*/
+            items : data, /*state con todos los items (ignorar, no se usaxd)*/
+            items2 : props.items2,/*State que viene desde app*/
+            user : "rogwi",//viene desde app
+            compra : []
         }
 
     }
+    
     borrarItem(key){
         //busco el tr con el id Key, key es el id del item en el .json
         
@@ -24,7 +30,14 @@ export default class Cart extends React.Component{
         document.getElementsByClassName('T-body')[0].removeChild(trs);
         //borro del state
         delete this.state.items2[key];//
-        console.log(this.state.items2);
+        
+    }
+    cantidad(key){
+        let trs=document.getElementById(key);
+        //obtemgp el value
+        let c =trs.getElementsByClassName('cantidad')[0].value;
+        console.log(c);
+        this.state.items2[key].cantidad=c;
     }
     actualizar(){
 
@@ -36,7 +49,7 @@ export default class Cart extends React.Component{
         //Recorro y calculo los precios
         let total =document.getElementsByClassName("Totals-tot")[0];
         let suma=0;
-        for(let i=0;i<cantidad.length ; i++){
+        for(let i=0;i<cantidad.length ; i++){//cambiar para que se trabaje con el objeto carro
             let calculo = Number(precio[i].textContent)*cantidad[i].value;
             sub[i].innerText= calculo;
             suma+=calculo;
@@ -46,11 +59,55 @@ export default class Cart extends React.Component{
         let subtotal = document.getElementsByClassName('Totals-sub')[0];
         subtotal.innerText =suma;
     }
+    comprar(){/* Genera reporte del cart y se envia al siguiente paso checkout */
+        /*Reporte:
+        -codigo
+        -usuario
+        -fecha
+        -items
+        -total
+        */
+        let reporte=[];
+        let items = this.state.items2;
+        let suma=0;
+        for(const indice in items){
+                suma += ((items[indice].precio)-((items[indice].precio)*items[indice].descuento))*items[indice].cantidad;
+        }
+        if(this.state.user==="NA"){
+            alert("Solo usuarios Registrados puede realizar una Compra!!");
+        }
+        else if(Object.keys(items).length===0 ||suma===0){
+            alert("Carrito vacio, Colóque algunos productos!!")
+        }else{
+            
+            let codigo = Date.now();
+            let usuario =this.state.user;
+            let fecha =new Date();
+            
+            reporte.push(codigo);
+            reporte.push(usuario);
+            reporte.push(fecha);
+            reporte.push(items);
+            reporte.push(suma);
+
+            let confirmacion = window.confirm("Comfirmar compra!!!");
+            
+            console.log(reporte);
+            //agrego el reporte al state{
+            this.setState({
+                compra :reporte
+            });
+            
+        }
+
+
+    }
+    
     render(){
         const items=this.state.items2;
         const total= calcularTotal();
         
-        console.log(items);//
+        //console.log(items);//
         
         function calcularTotal(){
             let suma=0;
@@ -87,7 +144,7 @@ export default class Cart extends React.Component{
                                     <td className="item-miniatura"><img src={items[indice].url}/></td>
                                     <td className="item-nombre">{items[indice].name}</td>
                                     <td className="item-precio">{(items[indice].precio)-((items[indice].precio)*items[indice].descuento)}</td>
-                                    <td className="item-cantidad"><input type="Number" className="cantidad" placeholder="1"/></td>
+                                    <td className="item-cantidad"><input onChange={()=> this.cantidad(indice)} type="Number" min="1" placeholder="1"  className="cantidad" /></td>
                                     <td className="item-subtotal">{(items[indice].precio)-((items[indice].precio)*items[indice].descuento)}</td>
                                 </tr>
                             )
@@ -112,8 +169,12 @@ export default class Cart extends React.Component{
                     </tbody>
                     </table>
                     <div>
-                            <button className="btn-comprar">Comprar</button>
+                            <button className="btn-comprar" onClick={() => this.comprar()}>Checkout</button>
                     </div>
+                    {/*aqui mando state.compra, no lo hago pues me da error si el checkin estaa qui*/}
+                    <Checkin
+                        compra= {this.state.items2}
+                    />
                 </div>
             </div>
         )

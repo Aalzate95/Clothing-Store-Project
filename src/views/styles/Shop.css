@@ -33,6 +33,9 @@
     text-align: center;
     border-bottom: 1px solid;
   }
+  #Buscador{
+    grid-column: 4;
+  }
   .Shop-body{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr 2fr;
@@ -64,6 +67,9 @@
     }
     #Seleccion{
       text-align: center;
+      grid-column: 1;
+    }
+    #Buscador{
       grid-column: 1;
     }
   

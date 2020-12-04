@@ -9,13 +9,28 @@ export default class Shop extends React.Component{
     constructor(props){
         super(props);
         this.setCategorie = this.setCategorie.bind(this);
+        this.buscar = this.buscar.bind(this);
         this.state ={
             items: dataPrincipal.productos,
             categories:  dataPrincipal.categories,
             categorie: "",
-            items2: props.items2 //Carrito, borrar llamar  aprops
+            items2: props.items2//Carrito, borrar llamar  aprops
+            
         };
         
+    }
+    buscar(str){//se cae, buscar solucion
+        //Obtenengo los mycards
+        let cards = document.getElementsByClassName('MyCard');
+        //filtro
+        for(let card of cards){
+            let name = card.getElementsByTagName('h3')[0];
+            if(name.textContent.includes(str)){
+                name.display= "";
+            }else{
+                name.display="none";
+            }
+        }
     }
     setCategorie(cat) {
         this.setState({categorie: cat})
@@ -34,6 +49,7 @@ export default class Shop extends React.Component{
                 prods = {items}
                 categorie ={categorie}
                 items2 ={this.state.items2}//
+                
         />
         
         return(
@@ -47,6 +63,10 @@ export default class Shop extends React.Component{
 
                 <h1>Catálogo</h1>
                 <div className="Shop-body">
+                        <div id="Buscador">
+                            <input  id="buscador" type="text" placeholder="Buscar producto.."/>
+                        </div>
+
                         {categoria}
 
                         <div id="Seleccion">
