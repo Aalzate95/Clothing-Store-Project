@@ -1,4 +1,6 @@
 import React from 'react'
+import './styles/Formulario.css'
+
 export default  class Formulario extends React.Component{
 
     constructor(args){
@@ -52,14 +54,15 @@ export default  class Formulario extends React.Component{
     
     render(){
         return(
-            <div>          
-            <label htmlFor="nombre">Nombre</label>
+            <div id="formulario">
+            <form >          
+            <label htmlFor="nombre">Nombre:</label>
             <input onChange={this.onChange.bind(this)} value={this.state.nombre} id="nombre" name="nombre" type="text"></input><br></br>
             
             <label htmlFor="apellido">Apellido:</label>
             <input onChange={this.onChange.bind(this)} value={this.state.apellido} id="apellido" name="apellido" type="text"></input><br></br>
             
-            <label htmlFor="fecha">Fecha de nacimiento:</label>
+            <label htmlFor="fecha">Birth:</label>
             <input onChange={this.onChange.bind(this)} value={this.state.fecha} id="fecha" name="fecha" type="date"></input><br></br>
             
             <label htmlFor="correo">Correo:</label>
@@ -83,14 +86,9 @@ export default  class Formulario extends React.Component{
             <textarea id="about" name="about" value={this.state.about} 
             onChange={this.onChange.bind(this)} ></textarea><br></br>
 
-            <label htmlFor="enviar"></label>
-            <input onChange={this.onChange.bind(this)} value={this.state.enviar} value="enviar" name="enviar" type="submit"></input><b></b> 
-            
-            
-            <div>
-            <p> {JSON.stringify(this.state)} </p>
-            </div>
-
+            <label  htmlFor="enviar"></label>
+            <input id="boton" onChange={this.onChange.bind(this)} value={this.state.enviar} value="enviar" name="enviar" type="submit"></input><b></b> 
+            </form>
             </div>
         )
     }

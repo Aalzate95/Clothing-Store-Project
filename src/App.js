@@ -45,6 +45,9 @@ function App() {
                 <li>
                   <Link to="/Contactanos">Contactanos</Link>
                 </li>
+                <li>
+                  <Link to="/noticias">Noticias</Link>
+                </li>
                 <li >
                   <Link to="/Ingresar">Ingresar</Link>
                 </li>
@@ -80,6 +83,9 @@ function App() {
             </Route>
             <Route  exact path="/Contactanos">
               <ContactUs/>
+            </Route>
+            <Route  exact path="/noticias">
+              <Noticias/>
             </Route>
             <Route exact path="/Ingresar">
               <Login />

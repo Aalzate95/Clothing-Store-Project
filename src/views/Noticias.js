@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles/Noticias.css'
-import PropTypes from 'prop-types'
 
 
 export default class Shop extends React.Component{

@@ -17,6 +17,7 @@ export default class DevelopmentTeam extends React.Component{
             <div className="DevTeam">
                 <div className="Shop-banner">
                     <img
+                        alt="banner"
                         className="Shop-crop"
                         src = 'https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg'
                     />

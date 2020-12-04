@@ -10,7 +10,6 @@ export default class ContactUs extends React.Component{
         }
     }
     render(){
-        const general = this.state.general;
         return(
             <div className="About">
                 <div>
