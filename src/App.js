@@ -7,11 +7,17 @@ import DevelopmentTeam from './views/DevelopmentTeam'
 import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
 import Login from './views/Login'
+import Cart from './views/Cart'
+import ContactUs from './views/ContactUs'
+import data from './data/Cart.json'
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
   //crear un estado con un  dict, 
+  let state ={
+    items: data //items que van al carrito, carrito: 
+  }
   return (
     <div className="App">
         <Router>
@@ -29,20 +35,29 @@ function App() {
               <li >
                 <Link to="/aboutUs">AboutUs</Link>
               </li>
+              <li>
+                <Link to="/contactUs">ContactUs</Link>
+              </li>
               <li >
                 <Link to="/login">Login</Link>
+              </li>
+              <li>
+                <Link to="/cart">Cart</Link>
               </li>
             </ul>
           </div>
           <Switch>
             
             <Route exact path="/">
-              <Home />
+              <Home 
+                items2 = {state.items}
+              />
             </Route>
 
             <Route exact path="/shop">
               <Shop 
                 /* aqui se envia el state del carrito*/
+                items2 = {state.items} //carrito : this.state.carrito
               />
             </Route>
             
@@ -53,9 +68,16 @@ function App() {
             <Route exact path="/aboutUs">
               <AboutUs />
             </Route>
-
+            <Route  exact path="/contactUs">
+              <ContactUs/>
+            </Route>
             <Route exact path="/login">
               <Login />
+            </Route>
+            <Route exact path="/cart">
+              <Cart
+                items2 = {state.items}
+              />
             </Route>
           </Switch>
 

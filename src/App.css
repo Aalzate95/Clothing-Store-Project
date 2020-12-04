@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
 *{
   font-family: Roboto, sans-serif;
@@ -127,6 +126,25 @@
  
 }
 
+
+.DevTeam{
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.DevTeam h1{
+  margin:2% 10% 2% 10%;
+  border-bottom: 1px solid;
+}
+
+.Dev-body{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin:0 10% 0 10%;
+}
+
+=======
+
 .DevTeam{
   text-align: center;
   margin-bottom: 10%;
@@ -157,7 +175,6 @@
 .AboutUs-Map{
   margin: 5% 15% 0 15%;
 }
-
 
 /*mobile devices*/
 @media only screen and (max-width: 600px) {

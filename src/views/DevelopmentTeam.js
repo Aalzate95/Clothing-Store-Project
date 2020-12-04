@@ -1,7 +1,8 @@
 import React from 'react'
 import data from '../data/developmentTeam.json'
 import Developer from '../components/Developer'
-import FitBanner from '../components/FitBanner'
+import Banner from '../components/Banner'
+
 export default class DevelopmentTeam extends React.Component{
     constructor(props){
         super(props);
@@ -14,7 +15,7 @@ export default class DevelopmentTeam extends React.Component{
         const devs=this.state.desarrolladores;
         return(
             <div className="DevTeam">
-                <FitBanner
+                <Banner
                     url = 'https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg'
                 />
                 <h1>DevelopmentTeam</h1>

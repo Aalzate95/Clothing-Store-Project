@@ -54,7 +54,6 @@ export default class Developer extends React.Component{
                                 )
                             })
                         }
-
                         </ul>
                         
                         <p>Portfolio : <a href={url}>{url}</a></p>

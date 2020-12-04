@@ -31,11 +31,14 @@ export default class Home extends React.Component{
                             return(
                                     <MyCard
                                     key = {indice}
+                                    indice ={indice}
                                     name = {tendencias[indice].name}
                                     categorie = {tendencias[indice].categorie}
                                     url = {tendencias[indice].url}
                                     precio = {tendencias[indice].precio}
                                     descuento = {tendencias[indice].descuento}
+                                    isOferta ={tendencias[indice].isOferta}//
+                                    items2= {this.props.items2}
                                     /> 
                                 )
                         })
