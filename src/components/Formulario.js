@@ -15,7 +15,7 @@ export default  class Formulario extends React.Component{
             genero:""
         }
     }
-    // < >
+    
     onChange(e){
         if(e.target.name==="nombre"){
             this.setState({
@@ -48,10 +48,6 @@ export default  class Formulario extends React.Component{
         }
         
     }
-
-        //this.setState({
-        //    [e.target.nombre]: e.target.value
-        //})
     
     render(){
         return(
