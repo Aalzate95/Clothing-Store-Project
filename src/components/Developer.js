@@ -4,7 +4,7 @@ import './styles/Developer.css'
 export default class Developer extends React.Component{
           
     render(){
-        const {nombre,origen,detalle,skills,url,img} = this.props;
+        const {nombre,origen,detalle,skills,redes,url,img} = this.props;
         return(
             <div className="Developer">
                 <div className="card-container">
@@ -16,6 +16,18 @@ export default class Developer extends React.Component{
                         <a className="primary ghost" href={url}>
                             Follow
                         </a>
+                    </div>
+                    <div className="redes">
+                        <h6>Redes</h6>
+                        <ul>
+                        {
+                            Object.keys(redes).map((i)=>{
+                                return(
+                                <li key={i}>{"> "+redes[i]}</li> 
+                                )
+                            })
+                        }
+                        </ul>
                     </div>
                     <div className="skills">
                         <h6>Skills</h6>
