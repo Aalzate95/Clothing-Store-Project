@@ -93,10 +93,20 @@ export default class Cart extends React.Component{
             let confirmacion = window.confirm("¿Avanzar a Checkout?");
             
             console.log(reporte);
-            //agrego el reporte al state{
-            this.setState({
-                compra :reporte
-            });
+            //agrego el reporte si confirmacion es true
+            if(confirmacion){
+                this.setState({
+                    compra :reporte
+                });
+                //hago display none
+                document.getElementsByClassName('Tabla')[0].style.display="none";
+                document.getElementsByClassName('btndiv')[0].style.display="none";
+                document.getElementsByClassName('p')[0].style.display="none";
+                document.getElementsByClassName('Totals')[0].style.display="none";
+                document.getElementsByClassName('btndiv2')[0].style.display="none";
+
+            }
+            
             
         }
 
@@ -162,10 +172,10 @@ export default class Cart extends React.Component{
                         }
                     </tbody>
                     </table>
-                    <div>
+                    <div className="btndiv">
                             <button className="btn-actualizar" onClick={() =>this.actualizar()}>Actualizar Carrito</button>
                     </div>
-                    <p>Total</p>
+                    <p className="p">Total</p>
                     <table className="Totals">
                     <tbody>
                         <tr>
@@ -178,7 +188,7 @@ export default class Cart extends React.Component{
                         </tr>
                     </tbody>
                     </table>
-                    <div>
+                    <div className="btndiv2">
                             <button className="btn-comprar" onClick={() => this.comprar()}>Checkout</button>
                     </div>
                     {checkout}
