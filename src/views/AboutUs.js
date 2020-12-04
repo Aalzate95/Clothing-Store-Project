@@ -24,7 +24,6 @@ export default class AboutUs extends React.Component{
                 <h1>About Us</h1>
                 <div className="About-body">
                     <div>
-
                         <h3>¿Quiénes Somos?</h3>
                         <p>{general.resumen}</p>
                         <h3>¿Dónde Encontrarnos?</h3>
