@@ -62,7 +62,7 @@ export default  class Formulario extends React.Component{
             <label htmlFor="apellido">Apellido:</label>
             <input onChange={this.onChange.bind(this)} value={this.state.apellido} id="apellido" name="apellido" type="text"></input><br></br>
             
-            <label htmlFor="fecha">Fecha de nacimiento:</label>
+            <label htmlFor="fecha">Birth:</label>
             <input onChange={this.onChange.bind(this)} value={this.state.fecha} id="fecha" name="fecha" type="date"></input><br></br>
             
             <label htmlFor="correo">Correo:</label>
