@@ -1,7 +1,7 @@
 import React from 'react'
 import data from '../data/developmentTeam.json'
 import Developer from '../components/Developer'
-import HomeBanner from '../components/HomeBanner'
+
 
 export default class DevelopmentTeam extends React.Component{
     constructor(props){

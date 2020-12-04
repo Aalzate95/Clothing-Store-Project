@@ -28,6 +28,34 @@
         },
         "url": "https://github.com/RogwiCajas",
         "img": "https://avatars1.githubusercontent.com/u/33600400?s=400&u=0f19e0f546f24914d7b71c7422a0d487e990dbfa&v=4"
+    },
+    "2":{
+        "nombre": "Angie",
+        "edad": "-",
+        "origen": "-",
+        "detalle": "Desarrollador de Software",
+        "skills": {
+            "0": "HTML",
+            "1": "JavaScript",
+            "2": "React",
+            "3": "CSS"
+        },
+        "url": "-",
+        "img": "https://lh3.googleusercontent.com/proxy/K3OPB-k-leaKPwc7HThiavDxEo0LjNYMISgf_-CJuEYlmDitdC6gsNVjx-tF5bS6FFosdKqVgcjIx8ghhu17Ecx3dAox_sbiKGNjbeyL1dWfGtiURO_Qb83mpd59i86BsTyW5sZeBtgt3vYh"
+    },
+    "3":{
+        "nombre": "Isaac",
+        "edad": "-",
+        "origen": "-",
+        "detalle": "Desarrollador de Software",
+        "skills": {
+            "0": "HTML",
+            "1": "JavaScript",
+            "2": "React",
+            "3": "CSS"
+        },
+        "url": "-",
+        "img": "https://lh3.googleusercontent.com/proxy/K3OPB-k-leaKPwc7HThiavDxEo0LjNYMISgf_-CJuEYlmDitdC6gsNVjx-tF5bS6FFosdKqVgcjIx8ghhu17Ecx3dAox_sbiKGNjbeyL1dWfGtiURO_Qb83mpd59i86BsTyW5sZeBtgt3vYh"
     }
     
 }
