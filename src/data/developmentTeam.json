@@ -47,9 +47,9 @@
         "img": "https://avatars1.githubusercontent.com/u/60304947?s=460&u=2b211b8dcf37d6b59e12a7c1c04518d91f4cf114&v=4"
      },
     "3":{
-        "nombre": "Isaac",
-        "edad": "-",
-        "origen": "-",
+        "nombre": "Isaac Solis",
+        "edad": "23",
+        "origen": "Ecuador, Guayaquil",
         "detalle": "Desarrollador de Software",
         "skills": {
             "0": "HTML",
