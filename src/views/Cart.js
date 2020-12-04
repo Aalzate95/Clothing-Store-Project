@@ -80,7 +80,7 @@ export default class Cart extends React.Component{
             alert("Carrito vacio, Colóque algunos productos!!")
         }else{
             
-            let codigo = Date.now();
+            let codigo = Date.now();//usar codigo de DB
             let usuario =this.state.user;
             let fecha =new Date();
             
