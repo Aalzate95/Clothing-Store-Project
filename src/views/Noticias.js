@@ -9,24 +9,26 @@ export default class Shop extends React.Component{
         return(
             <div className="Noticias">
 
-                <div>
-                    <div className="Noticias-banner">
-                        <img className="Noticias-crop" src="//ae01.alicdn.com/kf/H13be6cc60f4a46968e9a3d825b853799U.png_.webp"   alt="noticias-banner"></img>
-                    </div>
+                <div className="Shop-banner">
+                    <img
+                        alt="banner"
+                        className="Shop-crop"
+                        src = 'https://images.dailyhive.com/20161123144615/Serpentine-Toronto-1.jpg'
+                    />
                 </div>
 
                 <h1>Novedades</h1>
                 <div className="Noticias-body">
                             <div id="noticias1">
-                            <img className="noticiasImg" src="Images/Noticias/noticia1.jpeg"   alt="noticia1"></img>
+                            <img className="noticiasImg" src="https://i.cbc.ca/1.5356695.1574106962!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/common-sort.jpg"   alt="noticia1"></img>
                             </div>
 
                             <div id="noticias2">
-                            <img className="noticiasImg" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="noticia2"></img>
+                            <img className="noticiasImg" src="https://www.supermarketnews.com/sites/supermarketnews.com/files/styles/article_featured_retina/public/kroger-dip-fashion-brand.gif?itok=RhVgHR6y"   alt="noticia2"></img>
                             </div>
 
                             <div id="noticias3">
-                            <img className="noticiasImg" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="noticia3"></img>
+                            <img className="noticiasImg" src="https://www.shoplo.com/blog/wp-content/uploads/2016/05/9_tips_for_promoting_your-900x400.jpg"   alt="noticia3"></img>
                             </div> 
 
                             <div id="oferta">

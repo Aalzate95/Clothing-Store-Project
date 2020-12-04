@@ -12,22 +12,17 @@ export default class Developer extends React.Component{
                     <h3>{nombre}</h3>
                     <h6>{origen}</h6>
                     <p>{detalle}</p>
-                    <div className="buttons">
-                        <a className="primary ghost" href={url}>
-                            Follow
-                        </a>
-                    </div>
-                    <div className="redes">
-                        <h6>Redes</h6>
-                        <ul>
+                    
+                    <div className="Developer-Buttons">
                         {
-                            Object.keys(redes).map((i)=>{
+                            Object.keys(redes).map((red)=>{
                                 return(
-                                <li key={i}>{"> "+redes[i]}</li> 
+                                <a className="primary ghost" key={red}href={url}>
+                                    {red}
+                                </a> 
                                 )
                             })
                         }
-                        </ul>
                     </div>
                     <div className="skills">
                         <h6>Skills</h6>

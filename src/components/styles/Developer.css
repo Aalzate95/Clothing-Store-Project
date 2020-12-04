@@ -29,14 +29,18 @@
     height: auto;
 }
 
+.Developer-Buttons{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	margin:0 10px 0 10px;
+}
+
 a.primary {
 	background-color: #FFF4F0;
 	border: 1px solid white;
 	border-radius: 3px;
-	color: #231E39;
-	font-family: Montserrat, sans-serif;
-	font-weight: 500;
-	padding: 10px 25px;
+	padding: 10px;
+	margin:2px;
 }
 
 a.primary.ghost {
@@ -46,6 +50,7 @@ a.primary.ghost {
 
 a.primary.ghost:hover {
 	background-color: #818181;
+	cursor: pointer;
 }
 
 .skills {
@@ -70,6 +75,8 @@ a.primary.ghost:hover {
 	margin: 0 7px 7px 0;
 	padding: 7px;
 }
+
+
 
 /*mobile devices*/
 @media only screen and (max-width: 600px) {
