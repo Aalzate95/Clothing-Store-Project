@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Home from './views/Home'
 import Shop from './views/Shop'
+import Noticias from './views/Noticias'
 import DevelopmentTeam from './views/DevelopmentTeam'
 import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
@@ -21,30 +22,37 @@ function App() {
   return (
     <div className="App">
         <Router>
-          <div  id = "NavegationBar">
+          <div className="NavBar">
             <ul>
               <li >
-                <Link to="/">Home</Link>
-              </li>
-              <li >
-                <Link to="/shop">Shop</Link>
-              </li>
-              <li >
-                <Link to="/developmentTeam">DevelopmentTeam</Link>
-              </li>
-              <li >
-                <Link to="/aboutUs">AboutUs</Link>
-              </li>
-              <li>
-                <Link to="/contactUs">ContactUs</Link>
-              </li>
-              <li >
-                <Link to="/login">Login</Link>
-              </li>
-              <li>
-                <Link to="/cart">Cart</Link>
+
+                  <Link to="/"><img className = 'LogoHome'src="https://i.ibb.co/fn1M1VL/logo.png" alt="Home"/></Link>
+
               </li>
             </ul>
+            <div id = "NavegationBar">
+              <ul>
+                
+                <li >
+                  <Link to="/shop">Comprar</Link>
+                </li>
+                <li >
+                  <Link to="/developmentTeam">Desarrolladores</Link>
+                </li>
+                <li >
+                  <Link to="/aboutUs">Conocenos</Link>
+                </li>
+                <li>
+                  <Link to="/contactUs">Contactanos</Link>
+                </li>
+                <li >
+                  <Link to="/login">Ingresar</Link>
+                </li>
+                <li>
+                  <Link to="/cart"><div className="CarritoElementos"><img className = 'ICarrito'src="https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/20314567451554468896-512.png" alt="cart"/></div></Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <Switch>
             
@@ -64,7 +72,9 @@ function App() {
             <Route exact path="/developmentTeam">
               <DevelopmentTeam />
             </Route>
-
+            <Route exact path="/noticias">
+              <Noticias />
+            </Route>
             <Route exact path="/aboutUs">
               <AboutUs />
             </Route>
@@ -82,9 +92,9 @@ function App() {
           </Switch>
 
       </Router>
-    <footer className="Footer">
-      <MyFooter/>
-    </footer>
+      <footer>
+        <MyFooter/>
+      </footer>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+{
+    "0":{
+        "title":"Recursos",
+        "descripcion":["Contactenos","Tienda"]
+    },
+    "1":{
+        "title":"Acerca de nosotros",
+        "descripcion":["Nuestra empresa","Noticias","Redes Sociales"]
+    },
+    "2":{
+        "title":"Detalles de Contacto",
+        "descripcion":["pedidos@ssport.com","Telf: 0965845896","Instagram: @SpeedSports","Guayaquil"]
+    }
+    
+}

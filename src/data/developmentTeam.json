@@ -42,6 +42,19 @@
         },
         "url": "https://github.com/angtdiaz",
         "img": "https://avatars1.githubusercontent.com/u/60304947?s=460&u=2b211b8dcf37d6b59e12a7c1c04518d91f4cf114&v=4"
-     }
-    
+     },
+    "3":{
+        "nombre": "Isaac",
+        "edad": "-",
+        "origen": "-",
+        "detalle": "Desarrollador de Software",
+        "skills": {
+            "0": "HTML",
+            "1": "JavaScript",
+            "2": "React",
+            "3": "CSS"
+        },
+        "url": "-",
+        "img": "https://lh3.googleusercontent.com/proxy/K3OPB-k-leaKPwc7HThiavDxEo0LjNYMISgf_-CJuEYlmDitdC6gsNVjx-tF5bS6FFosdKqVgcjIx8ghhu17Ecx3dAox_sbiKGNjbeyL1dWfGtiURO_Qb83mpd59i86BsTyW5sZeBtgt3vYh"
+    }
 }
