@@ -3,6 +3,7 @@ import './App.css';
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Home from './views/Home'
 import Shop from './views/Shop'
+import Noticias from './views/Noticias'
 import DevelopmentTeam from './views/DevelopmentTeam'
 import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
@@ -24,7 +25,9 @@ function App() {
           <div className="NavBar">
             <ul>
               <li >
+
                   <Link to="/"><img className = 'LogoHome'src="https://i.ibb.co/fn1M1VL/logo.png" alt="Home"/></Link>
+
               </li>
             </ul>
             <div id = "NavegationBar">
@@ -69,7 +72,9 @@ function App() {
             <Route exact path="/developmentTeam">
               <DevelopmentTeam />
             </Route>
-
+            <Route exact path="/noticias">
+              <Noticias />
+            </Route>
             <Route exact path="/aboutUs">
               <AboutUs />
             </Route>
