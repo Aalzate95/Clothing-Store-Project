@@ -48,7 +48,7 @@ export default class Checkin extends React.Component{
         
     }      
     render(){
-        const compra=this.props.compra;
+        const compra=this.props.compra[3];//extraigo el objeto compra
         let suma=0;
         for(const indice in compra){
                 suma += ((compra[indice].precio)-((compra[indice].precio)*compra[indice].descuento))*compra[indice].cantidad;
@@ -115,10 +115,11 @@ export default class Checkin extends React.Component{
                             <td>{suma}</td>
                         </tr>
                     </tbody>
+                    
+                    </table>
                     <div className="metodosPago">
                         
                     </div>
-                    </table>
             </div>
                
         )

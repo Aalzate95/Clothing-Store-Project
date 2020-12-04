@@ -90,7 +90,7 @@ export default class Cart extends React.Component{
             reporte.push(items);
             reporte.push(suma);
 
-            let confirmacion = window.confirm("Comfirmar compra!!!");
+            let confirmacion = window.confirm("¿Avanzar a Checkout?");
             
             console.log(reporte);
             //agrego el reporte al state{
@@ -115,7 +115,17 @@ export default class Cart extends React.Component{
                 suma += (items[indice].precio)-((items[indice].precio)*items[indice].descuento);
             }
             return suma;
-        } 
+        }
+        let checkout =""; 
+        if(this.state.compra.length===0){
+            checkout=<div>
+                        <h1></h1>
+                    </div>
+        }else{
+            checkout=<Checkin
+                        compra= {this.state.compra}
+                    />
+        }
 
         return(
             <div className="Cart">
@@ -171,10 +181,12 @@ export default class Cart extends React.Component{
                     <div>
                             <button className="btn-comprar" onClick={() => this.comprar()}>Checkout</button>
                     </div>
-                    {/*aqui mando state.compra, no lo hago pues me da error si el checkin estaa qui*/}
+                    {checkout}
+                    {/*aqui mando state.compra, no lo hago pues me da error si el checkin estaa qui
                     <Checkin
                         compra= {this.state.items2}
                     />
+                    */}
                 </div>
             </div>
         )
