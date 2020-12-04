@@ -34,6 +34,7 @@ export default class AboutUs extends React.Component{
                             <iframe src={general.mapa}  title="Punto-Fiec" width="100%" height="500px" ></iframe>
                         </div>
                     
+                    </div>
                 </div>
             </div>
         )

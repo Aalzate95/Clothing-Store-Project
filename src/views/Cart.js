@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../data/Cart.json'
-import Banner from '../components/Banner'
+import HomeBanner from '../components/HomeBanner'
 import './styles/Cart.css'
 import PropTypes from 'prop-types'
 
@@ -62,7 +62,7 @@ export default class Cart extends React.Component{
 
         return(
             <div className="Cart">
-                <Banner
+                <HomeBanner
                     url = 'https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg'
                 />
                 <h1>Carrito</h1>
