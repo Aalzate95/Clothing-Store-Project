@@ -15,9 +15,13 @@ export default class DevelopmentTeam extends React.Component{
         const devs=this.state.desarrolladores;
         return(
             <div className="DevTeam">
-                <HomeBanner
-                    url = 'https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg'
-                />
+                <div className="Shop-banner">
+                    <img
+                        className="Shop-crop"
+                        src = 'https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg'
+                    />
+                </div>
+                
                 <h1>DevelopmentTeam</h1>
                 
                 <div className="Dev-body">

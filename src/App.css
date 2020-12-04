@@ -2,10 +2,12 @@
 *{
   font-family: Roboto, sans-serif;
 }
+
 .App{
   display: grid;
   grid-template-rows:70px 100% 10%;
 }
+
 #NavegationBar {
   display:block;
   width: 100%;
@@ -143,7 +145,6 @@
   margin:0 10% 0 10%;
 }
 
-=======
 
 .DevTeam{
   text-align: center;

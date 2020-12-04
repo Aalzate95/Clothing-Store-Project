@@ -42,7 +42,6 @@ export default class Shop extends React.Component{
                 <div>
                     <div className="Shop-banner">
                         <img className="Shop-crop" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="banner-shop"></img>
-                        
                     </div>
                 </div>
 

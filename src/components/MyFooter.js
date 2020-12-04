@@ -11,7 +11,7 @@ const data = {
 export default class MyFooter extends React.Component{
     RenderComponent = (e,index) => {
         return(
-            <div className="col-sm" key={index}>
+            <div className="" key={index}>
                 <div className = "FooterTarget">
                     <h6>{data[e]['title']}</h6>
                     {data[e]['descripcion'].map((e,index) =>{
