@@ -12,7 +12,7 @@ export default class Shop extends React.Component{
 
                 <div>
                     <div className="Noticias-banner">
-                        <img className="Noticias-crop" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="noticias-banner"></img>
+                        <img className="Noticias-crop" src="//ae01.alicdn.com/kf/H13be6cc60f4a46968e9a3d825b853799U.png_.webp"   alt="noticias-banner"></img>
                     </div>
                 </div>
 
