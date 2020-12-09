@@ -66,8 +66,8 @@ export default  class Formulario extends React.Component{
             <input onChange={this.onChange.bind(this)} value={this.state.correo} id="correo" name="correo" type="email"></input><br></br>
 
             <label htmlFor="genero">Genero: </label><br></br>
-            <input onChange={this.onChange.bind(this)} value={this.state.genero} value="M" name="genero" type="radio"></input>Masculino<br></br>
-            <input onChange={this.onChange.bind(this)} value={this.state.genero} value="F" name="genero" type="radio"></input>Femenino<br></br>
+            <input onChange={this.onChange.bind(this)} value="M" name="genero" type="radio"></input>Masculino<br></br>
+            <input onChange={this.onChange.bind(this)} value="F" name="genero" type="radio"></input>Femenino<br></br>
             
             <label htmlFor="lugar">Lugar:</label>
             <select onChange={this.onChange.bind(this)} 
@@ -84,7 +84,7 @@ export default  class Formulario extends React.Component{
             onChange={this.onChange.bind(this)} ></textarea><br></br>
 
             <label  htmlFor="enviar"></label>
-            <input id="boton" onChange={this.onChange.bind(this)} value={this.state.enviar} value="enviar" name="enviar" type="submit"></input><b></b> 
+            <input id="boton" onChange={this.onChange.bind(this)}  value="enviar" name="enviar" type="submit"></input><b></b> 
             </form>
             </div>
         )

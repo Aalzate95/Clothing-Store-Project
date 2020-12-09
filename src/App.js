@@ -8,7 +8,7 @@ import DevelopmentTeam from './views/DevelopmentTeam'
 import AboutUs from './views/AboutUs'
 import MyFooter from './components/MyFooter'
 import Login from './views/Login'
-import Cart from './views/Cart'
+//import Cart from './views/Cart'
 import ContactUs from './views/ContactUs'
 import data from './data/Cart.json'
 
@@ -51,9 +51,9 @@ function App() {
                 <li >
                   <Link to="/Ingresar">Ingresar</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/cart"><div className="CarritoElementos"><img className = 'ICarrito'src="https://ddo0fzhfvians.cloudfront.net/uploads/icons/png/20314567451554468896-512.png" alt="cart"/></div></Link>
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
@@ -90,11 +90,11 @@ function App() {
             <Route exact path="/Ingresar">
               <Login />
             </Route>
-            <Route exact path="/cart">
+            {/* <Route exact path="/cart">
               <Cart
                 items2 = {state.items}
               />
-            </Route>
+            </Route> */}
           </Switch>
 
       </Router>

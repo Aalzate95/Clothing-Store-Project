@@ -158,7 +158,7 @@ export default class Checkin extends React.Component{
                     onChange={this.onChange.bind(this)} ></textarea><br></br>
 
                     <label htmlFor="enviar"></label>
-                    <input onChange={this.onChange.bind(this)}  value={this.state.enviar} value="Comprobar" name="enviar" type="submit"></input><b></b> 
+                    <input onChange={this.onChange.bind(this)}   value="Comprobar" name="enviar" type="submit"></input><b></b> 
                 
 
                 </form>
@@ -195,11 +195,11 @@ export default class Checkin extends React.Component{
                     <h3>Métodos de Pago:</h3>
 
                     <label htmlFor="metodo">Opciones disponibles </label><br></br>
-                    <input onChange={this.onChange.bind(this)} value={this.state.metodo} value="Paypal" name="metodo" type="radio"></input>Paypal<br></br>
+                    <input onChange={this.onChange.bind(this)}  value="Paypal" name="metodo" type="radio"></input>Paypal<br></br>
                     <img width="80px" height="auto" src="https://www.flaticon.es/svg/static/icons/svg/196/196566.svg" alt="paypal.icon"></img> <br></br>
-                    <input onChange={this.onChange.bind(this)} value={this.state.metodo} value="Transferencia Directa" name="metodo" type="radio"></input>Transferencia Directa<br></br>
+                    <input onChange={this.onChange.bind(this)}  value="Transferencia Directa" name="metodo" type="radio"></input>Transferencia Directa<br></br>
                     <img width="60px" height="auto" src="https://www.flaticon.es/svg/static/icons/svg/2535/2535076.svg" alt="directa.icon"></img> <br></br>
-                    <input onChange={this.onChange.bind(this)} value={this.state.metodo} value="Pago en Entrega" name="metodo" type="radio"></input>Pago en Entrega<br></br>
+                    <input onChange={this.onChange.bind(this)} value="Pago en Entrega" name="metodo" type="radio"></input>Pago en Entrega<br></br>
                     <img width="60px" height="auto" src="https://www.flaticon.es/svg/static/icons/svg/1570/1570917.svg" alt="pagoEntrega.icon"></img> <br></br>
 
 
