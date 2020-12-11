@@ -2,12 +2,12 @@
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 99; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 0px; /* Location of the box  //*/ 
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: scroll; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
@@ -19,6 +19,7 @@
     padding: 20px;
     border: 1px solid #888;
     width: 75%;
+    height: 100%;
     
     
   }
@@ -27,9 +28,16 @@
     grid-template-columns: 3fr 1fr;
     column-gap: 15px;
     height: 100%;
+    overflow: scroll;
   }
   .modal-descripcion{
     grid-column: 2;
+  }
+  .modal-descripcion .des-regular em{
+    text-decoration: line-through;
+  }
+  .modal-descripcion .des-oferta {
+    font-weight: 900;
   }
   .modal-img{
     grid-column: 1;
@@ -51,6 +59,7 @@
       display: grid;
       grid-template-columns: 1fr;
       height: 100%;
+      overflow: scroll;
     }
     .modal-descripcion{
       grid-column: 1;

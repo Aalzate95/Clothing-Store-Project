@@ -54,10 +54,12 @@ export default class MyCard extends React.Component{
                                     <img src={url} alt="imagen" />
                                 </div>
                                 <div className="modal-descripcion">
-                                    <h2>Descripcion:</h2>
-                                    <h3>{name}</h3>
-                                    <p>{categorie}</p>
-                                    <p>{precio} -- {descuento} </p>
+                                    <h1>{name.toUpperCase()}</h1>
+                                    <h3>Descripcion:</h3>
+                                    
+                                    <p>{"Categoría: "+categorie}</p>
+                                    <p className="des-regular">{"Precio Regular: "}<em>{precio}</em></p>
+                                    <p className="des-oferta">{"Precio Oferta: "+(precio-(precio*descuento))}</p>
 
                                 </div>
                             </div>

@@ -30,6 +30,7 @@ export default class Cart extends React.Component{
         document.getElementsByClassName('T-body')[0].removeChild(trs);
         //borro del state
         delete this.state.items2[key];//
+        console.log(this.state.items2);
         
     }
     cantidad(key){
@@ -108,7 +109,7 @@ export default class Cart extends React.Component{
                 document.getElementsByClassName('p')[0].style.display="none";
                 document.getElementsByClassName('Totals')[0].style.display="none";
                 document.getElementsByClassName('btndiv2')[0].style.display="none";
-
+                
             }
             
             
