@@ -1,7 +1,7 @@
 import React from 'react'
-import data from '../data/aboutUs.json'
+import data from '../../data/aboutUs.json'
 import './styles/ContactUs.css'
-import Formulario from '../components/Formulario'
+import Formulario from '../../components/Formulario'
 export default class ContactUs extends React.Component{
     constructor(props){
         super(props);

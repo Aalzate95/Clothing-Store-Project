@@ -1,9 +1,9 @@
 import React from 'react'
-import data from '../data/Cart.json'
-import HomeBanner from '../components/HomeBanner'
+import data from '../../data/Cart.json'
+import HomeBanner from '../../components/HomeBanner'
 import './styles/Cart.css'
 import PropTypes from 'prop-types'
-import Checkin from '../components/Checkin'
+import Checkin from '../../components/Checkin'
 
 export default class Cart extends React.Component{
     constructor(props){

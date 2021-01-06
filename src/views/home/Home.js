@@ -1,7 +1,7 @@
 import React from 'react'
-import HomeBanner from '../components/HomeBanner'
-import dataPrincipal from '../data/principal.json'
-import MyCard from '../components/MyCard'
+import HomeBanner from '../../components/HomeBanner'
+import dataPrincipal from '../../data/principal.json'
+import MyCard from '../../components/MyCard'
 import './styles/Home.css'
 
 export default class Home extends React.Component{

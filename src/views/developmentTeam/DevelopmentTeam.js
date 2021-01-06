@@ -1,6 +1,6 @@
 import React from 'react'
-import data from '../data/developmentTeam.json'
-import Developer from '../components/Developer'
+import data from '../../data/developmentTeam.json'
+import Developer from '../../components/Developer'
 
 
 export default class DevelopmentTeam extends React.Component{

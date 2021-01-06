@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../data/aboutUs.json'
+import data from '../../data/aboutUs.json'
 import './styles/AboutUs.css'
 
 

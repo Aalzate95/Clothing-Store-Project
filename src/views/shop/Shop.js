@@ -1,7 +1,7 @@
 import React from 'react'
-import Categoria from '../components/Categoria.js'
+import Categoria from '../../components/Categoria.js'
 import './styles/Shop.css'
-import dataPrincipal from '../data/shop.json'
+import dataPrincipal from '../../data/shop.json'
 import PropTypes from 'prop-types'
 
 
