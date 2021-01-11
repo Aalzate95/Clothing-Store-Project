@@ -1,0 +1,38 @@
+
+.Footer{
+    background-color: #525252;
+    display: grid;
+    grid-template-columns:75% 25%;
+    height:100%;
+    color: white;
+    padding:2% 3% 2% 3%;
+  }
+  
+  .MyFooter {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    text-align: center;
+  }
+  
+  .MyFooter ul{
+    margin: 0;
+    padding: 0;
+    
+  }
+  .MyFooter ul li{
+    list-style-type: none;
+    margin: 0;
+    font-size:15px;
+  }
+  .btnSuscribirse{
+    color:#363636;
+    background: white;
+    border-radius: 3px;
+  }
+  
+  .btnSuscribirse:hover {
+    background: black;
+    color: white;
+  }
+  
+  

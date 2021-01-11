@@ -1,5 +1,6 @@
 import React from 'react'
-import data from '../data/footer.json'
+import data from '../../data/footer.json'
+import './MyFooter.css'
 
 export default class MyFooter extends React.Component{
     renderList = (value) => {

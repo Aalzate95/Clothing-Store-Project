@@ -11,9 +11,9 @@ const Pagination = (props) => {
     const handleClick =(e)=>{
         setPagActual(e)
       }
-    const handleCantPorPag = (e) =>{
+    /* const handleCantPorPag = (e) =>{
       setCantPorPag(e)
-    }
+    } */
     const handleCategoria = (e) =>{
       let cards = document.getElementsByClassName('Card');
       for(let card of cards){
