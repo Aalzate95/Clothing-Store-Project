@@ -1,102 +1,75 @@
-import React from 'react'
-import Categoria from '../../components/Categoria.js'
-import './styles/Shop.css'
-import dataPrincipal from '../../data/shop.json'
-import PropTypes from 'prop-types'
+import React,{useState} from 'react'
+import './Shop.css'
+import Data from '../../data/shop.json'
+import DataCategorias from '../../data/categorias.json'
+import Modal from '../../components/modal/Modal';
+import Pagination from '../../components/pagination/Pagination';
+const Shop = () => {
+    const [show, setShow] = useState(false);
+    const [idModal,setModal] = useState(null);
 
+    const ShowModal = (e) => {
+        setShow(true)
+        setModal(1)
+        
+      };
+    const HideModal = () => {
+        setShow(false)
+      };
 
-export default class Shop extends React.Component{
-    constructor(props){
-        super(props);
-        this.setCategorie = this.setCategorie.bind(this);
-        this.buscar = this.buscar.bind(this);
-        this.state ={
-            items: dataPrincipal.productos,
-            categories:  dataPrincipal.categories,
-            categorie: "",
-            items2: props.items2//Carrito, borrar llamar  aprops
-            
-        };
-        
-    }
-    buscar(str){//se cae, buscar solucion
-        //Obtenengo los mycards
-        let cards = document.getElementsByClassName('MyCard');
-        //filtro
-        for(let card of cards){
-            let name = card.getElementsByTagName('h3')[0];
-            if(name.textContent.includes(str)){
-                name.display= "";
-            }else{
-                name.display="none";
-            }
-        }
-    }
-    setCategorie(cat) {
-        this.setState({categorie: cat})
-    }
-    render() {
-        const items =this.state.items;
-        const categories =this.state.categories;
-        const categorie = this.state.categorie;
-        
-        
-        //items2 si llega aqui
-
-        //posiblemente borrar
-        let categoria;
-        categoria = <Categoria
-                prods = {items}
-                categorie ={categorie}
-                items2 ={this.state.items2}//
-                
-        />
-        
-        return(
-            <div className="Shop">
-
-                <div>
-                    <div className="Shop-banner">
-                        <img className="Shop-crop" src="https://image.freepik.com/foto-gratis/fila-ropa-moda-perchas_1232-3003.jpg"   alt="banner-shop"></img>
+    const renderContenido = () => {
+        let item;
+        if (idModal!==null){
+            item = Data[idModal]
+            let descuento = item.descuento*100 +"%"
+            return(
+                <div className="Modal-Producto">
+                    <div className="Imagen-Producto">
+                        <img src={item.url} alt={item.name}/>
+                    </div>
+                    <div className="Descripcion-Producto"> 
+                        <h2>{item.name}</h2>
+                        <div className="Parrafos">
+                                <p><b>Categoria:</b>{item.categorie}</p>
+                                <p>Descuento del <h2>{descuento}</h2></p>
+                        </div>
+                        <p>{item.descripcion}</p>
+                        <p><b>Cantidad:</b><input type ="text" value={1}/></p>
+                        <p><b>Precio:</b>{item.precio}</p>
                     </div>
                 </div>
-
-                <h1>Catálogo</h1>
-                <div className="Shop-body">
-                        <div id="Buscador">
-                            <input  id="buscador" type="text" placeholder="Buscar producto.."/>
-                        </div>
-
-                        {categoria}
-
-                        <div id="Seleccion">
-                            <h3>Categorias</h3>
-                            <div className="op" onClick={() =>this.setCategorie("")}>
-                                <p>Todas</p>
-                            </div>
-                            {
-                                Object.keys(categories).map((indice) => {
-                                    return(
-                                        <div className="op" key={indice}  onClick={() =>this.setCategorie(categories[indice].title)}>
-                                            <p>{categories[indice].title}</p>
-                                        </div>
-                                        
-                                    )
-                                }
-
-                                )
-                            }
-                            
-                            
-                        </div>
-                    
-                </div>
-                   
-            </div>
-    )
+            )
+        }
     }
-    
+
+    return ( 
+        <div className="Shop">
+           <div className="Shop-banner">
+                <img
+                    alt="banner"
+                    className="Shop-crop"
+                    src = 'https://image.freepik.com/foto-gratis/imagen-primer-plano-programador-trabajando-su-escritorio-oficina_1098-18707.jpg'
+                />
+            </div>
+
+            <div className="HistorialContenido">
+
+                <Modal show={show} handleClose={HideModal}>
+                    <div className="ModalShop">{renderContenido()}</div>
+                </Modal>
+
+                <div>
+                    <Pagination
+                                items = {Object.keys(Data)}
+                                data = {Data}
+                                ShowModal={ShowModal}
+                                categorias = {DataCategorias}
+                            />   
+                </div>
+            </div>
+        </div>
+     );    
 }
-Shop.propTypes = {
-    items2: PropTypes.object.isRequired
-}
+ 
+export default Shop;
+

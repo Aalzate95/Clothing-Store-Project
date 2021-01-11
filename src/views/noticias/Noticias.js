@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/Noticias.css'
+import './Noticias.css'
 
 
 export default class Shop extends React.Component{

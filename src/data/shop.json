@@ -1,37 +1,17 @@
 {
-    "categories":{
-        "0":{
-            "title":"camisetas",
-            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
-        },
-        "1":{
-            "title":"pantalonetas",
-            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
-            
-        },
-        "2":{
-            "title":"calcetines",
-            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
-           
-        },
-        "3":{
-            "title":"guantes",
-            "subtitle": "Uniformes deportivos con estilos personalizados de gran nivel."
-           
-        }
-    },
-    "productos":{
         "0":{
             "name":"Azmodan",
             "categorie": "camisetas",
+            "descripcion":"esto es una descripcion esto es una descripcion",
             "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
-            "descuento":0.2,
+            "descuento":0,
             "precio":1000,
             "isOferta": true
         },
         "1":{
             "name":"nombre",
             "categorie": "pantalonetas",
+            "descripcion":"esto es una descripcion esto es una descripcion",
             "url": "https://p1.pxfuel.com/preview/966/722/399/tennis-man-background-young.jpg",
             "descuento":0.3,
             "precio":1000,
@@ -40,6 +20,7 @@
         "2":{
             "name":"nombre",
             "categorie": "calcetines",
+            "descripcion":"esto es una descripcion esto es una descripcion",
             "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
             "descuento":0.4,
             "precio":1000,
@@ -48,6 +29,7 @@
         "3":{
             "name":"nombre",
             "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
             "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
             "descuento":0.1,
             "precio":1000,
@@ -56,10 +38,100 @@
         "4":{
             "name":"nombre",
             "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "5":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "6":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "7":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "8":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "9":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "10":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "11":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "12":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "13":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
+            "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
+            "descuento":0.1,
+            "precio":1000,
+            "isOferta": true
+        },
+        "14":{
+            "name":"nombre",
+            "categorie": "guantes",
+            "descripcion":"esto es una descripcion esto es una descripcion",
             "url": "https://themebubble.com/demo/webify/shop/wp-content/uploads/sites/18/2019/06/Claudie_28R1E19-04_H_1.jpg",
             "descuento":0.1,
             "precio":1000,
             "isOferta": true
         }
-    }
 }

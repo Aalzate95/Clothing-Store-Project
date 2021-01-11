@@ -1,15 +1,15 @@
 import React from 'react';
 import './App.css';
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Home from './views/Home'
-import Shop from './views/Shop'
-import Noticias from './views/Noticias'
-import DevelopmentTeam from './views/DevelopmentTeam'
-import AboutUs from './views/AboutUs'
+import Home from './views/home/Home'
+import Shop from './views/shop/Shop'
+import Noticias from './views/noticias/Noticias'
+import DevelopmentTeam from './views/developmentTeam/DevelopmentTeam'
+import AboutUs from './views/aboutUs/AboutUs'
 import MyFooter from './components/MyFooter'
-import Login from './views/Login'
+import Login from './views/login/Login'
 //import Cart from './views/Cart'
-import ContactUs from './views/ContactUs'
+import ContactUs from './views/contactUs/ContactUs'
 import data from './data/Cart.json'
 
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
@@ -34,7 +34,7 @@ function App() {
               <ul>
                 
                 <li >
-                  <Link to="/Comprar">Comprar</Link>
+                  <Link to="/Tienda">Tienda</Link>
                 </li>
                 <li >
                   <Link to="/Desarrolladores">Desarrolladores</Link>
@@ -65,7 +65,7 @@ function App() {
               />
             </Route>
 
-            <Route exact path="/Comprar">
+            <Route exact path="/Tienda">
               <Shop 
                 /* aqui se envia el state del carrito*/
                 items2 = {state.items} //carrito : this.state.carrito

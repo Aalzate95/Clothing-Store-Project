@@ -57,6 +57,35 @@
     color:gray;
     cursor: pointer;
   }
+
+  .Modal-Producto{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .Imagen-Producto{
+    display:flex;
+  }
+
+  .Imagen-Producto img{
+    display:block;
+    width: 100%;
+    height: auto;
+  }
+
+  .Descripcion-Producto{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .Descripcion-Producto > input{
+    width:50px;
+  }
+
+  .Parrafos{
+    display:grid;
+    grid-template-columns:1fr 1fr
+  }
+
   /*mobile devices*/
   @media only screen and (max-width: 600px) {
     .Shop-body{

@@ -1,6 +1,6 @@
 import React from 'react'
 import data from '../../data/aboutUs.json'
-import './styles/AboutUs.css'
+import './AboutUs.css'
 
 
 export default class AboutUs extends React.Component{
