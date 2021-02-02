@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './App.css';
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Home from './views/home/Home'
@@ -8,6 +9,8 @@ import DevelopmentTeam from './views/developmentTeam/DevelopmentTeam'
 import AboutUs from './views/aboutUs/AboutUs'
 import MyFooter from './components/footer/MyFooter'
 import Login from './views/login/Login'
+import RedesSociales from './views/redesSociales/RedesSociales'
+import Administrador from './views/Admin'
 //import Cart from './views/Cart'
 import ContactUs from './views/contactUs/ContactUs'
 import data from './data/Cart.json'
@@ -15,6 +18,7 @@ import data from './data/Cart.json'
 import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 function App() {
+  const history = useHistory();
   //crear un estado con un  dict, 
   let state ={
     items: data //items que van al carrito, carrito: 
@@ -43,10 +47,10 @@ function App() {
                   <Link to="/Conocenos">Conocenos</Link>
                 </li>
                 <li>
-                  <Link to="/Contactanos">Contactanos</Link>
+                  <Link to="/Contactenos">Contactenos</Link>
                 </li>
                 <li>
-                  <Link to="/noticias">Noticias</Link>
+                  <Link to="/Noticias">Noticias</Link>
                 </li>
                 <li >
                   <Link to="/Ingresar">Ingresar</Link>
@@ -75,21 +79,26 @@ function App() {
             <Route exact path="/Desarrolladores">
               <DevelopmentTeam />
             </Route>
-            <Route exact path="/noticias">
-              <Noticias />
-            </Route>
             <Route exact path="/Conocenos">
               <AboutUs />
             </Route>
-            <Route  exact path="/Contactanos">
+            <Route  exact path="/Contactenos">
               <ContactUs/>
             </Route>
-            <Route  exact path="/noticias">
+            <Route  exact path="/Noticias">
               <Noticias/>
             </Route>
             <Route exact path="/Ingresar">
               <Login />
             </Route>
+            <Route exact path="/Redes-Sociales">
+              <RedesSociales />
+            </Route>
+
+            <Route exact path="/Admin">
+              <Administrador/>
+            </Route>
+
             {/* <Route exact path="/cart">
               <Cart
                 items2 = {state.items}
