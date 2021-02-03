@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './Shop.css'
+import {​​​​​fetchproductolista}​​​​​ from '../../api/Api'
 import Data from '../../data/shop.json'
 import DataCategorias from '../../data/categorias.json'
 import Modal from '../../components/modal/Modal';
@@ -8,6 +9,7 @@ import NavBar from '../../components/navBar/NavBar'
 import MyFooter from '../../components/footer/MyFooter'
 
 const Shop = () => {
+    const [Data, setData] = useState([])
     const [show, setShow] = useState(false);
     const [idModal,setModal] = useState(null);
 
@@ -16,6 +18,16 @@ const Shop = () => {
         setModal(1)
         
       };
+    
+    const loadData = async () =>{
+        const data = await fetchproductolista();
+        const productos =  data.json()
+        setData(productos)
+    }
+
+    React.useEffect(() => (
+        loadData()
+    ),[])
     const HideModal = () => {
         setShow(false)
       };
