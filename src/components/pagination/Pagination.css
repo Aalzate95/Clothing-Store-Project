@@ -147,7 +147,7 @@
 .price-container .price:after {
 	height: 2.5em;
 	width: 2.5em;
-	background: #760B1F url('../../images/bg.jpg') top left no-repeat;
+	background: #760B1F url('/src/images/bg.jpg') top left no-repeat;
 	background-size: 2.5em;
 }
 
