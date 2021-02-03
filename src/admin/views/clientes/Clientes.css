@@ -4,10 +4,48 @@
     width: auto;
     height:70px;
     background-color: #F8F8FF;
-    margin:20px 20px 20px 20px;
+    margin:10px 20px 20px 20px;
     border-radius: 5px;
+    padding:1%; 
 }
 
-.Card-filtro{
-    margin-top: 30px;
+.acciones{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:2%;
 }
+
+.acciones button{
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+
+.Card-filtro input{
+    margin-top: 20px;
+    height: 25px;
+    width:300px;
+}
+
+.Card-listado{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: auto;
+    height:auto;
+    background-color: #F8F8FF;
+    margin:20px 20px 20px 20px;
+    border-radius: 5px;
+    padding:1%; 
+}
+
+.tituloTabla, .filaTabla{
+    display:grid;
+    grid-template-columns:1fr 2fr 2fr 2fr 2fr 2fr;
+    text-align: center;
+}
+.tituloTabla{
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+

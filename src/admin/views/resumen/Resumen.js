@@ -19,7 +19,7 @@ const Resumen = ({id}) => {
     const [totProductos, setTotProductos] = useState(30)
     const [gananciaEstimada, setGananciaEstimada] = useState(100000)
     
-    
+
     const renderProductos = Object.keys(UltimosProductos).map((item)=>{
         return(
             <div className="row" key={item}>
