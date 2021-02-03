@@ -9,6 +9,9 @@ import AboutUs from './views/aboutUs/AboutUs'
 import Login from './views/login/Login'
 import RedesSociales from './views/redesSociales/RedesSociales'
 import Dashboard from './admin/Admin'
+import Clientes from './admin/views/clientes/Clientes'
+import Productos from './admin/views/productos/Productos'
+import Configuracion from './admin/views/configuracion/Configuracion'
 //import Cart from './views/Cart'
 import ContactUs from './views/contactUs/ContactUs'
 import data from './data/Cart.json'
@@ -68,17 +71,35 @@ function App() {
               <RedesSociales />
             </Route>
 
+            <Route exact path="/Redireccion">
+              <Redireccion 
+                id = {id}
+               />
+            </Route>
+
             <Route exact path="/admin/">
               <Dashboard
                 id = {id}
               />
             </Route>
 
-            <Route exact path="/Redireccion">
-              <Redireccion 
-                id = {id}
-               />
+            <Route exact path="/admin/Clientes/">
+                <Clientes 
+                    id={id}
+                />
             </Route>
+
+            <Route exact path="/admin/Productos">
+                <Productos 
+                    id={id}
+                />
+            </Route>
+
+            <Route exact path="/admin/Configuracion">
+                <Configuracion 
+                    id={id}
+                />
+            </Route> 
 
           </Switch>
       </Router>

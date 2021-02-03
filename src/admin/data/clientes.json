@@ -1,0 +1,44 @@
+{
+    "0001":{
+        "nombre":"Alex",
+        "apellido":"Alzate",
+        "usuario":"aalzate",
+        "contraseña":"123",
+        "direccion":"Villa club",
+        "correo":"alex.alzate95@gmail.com",
+        "ciudad":"Guayaquil",
+        "telefono":"0989909418",
+        "esAdmin":true,
+        "carrito":{
+            "001":{
+                "cantidad":2,
+                "nombre":"Camiseta estampada roja"
+            },
+            "340":{
+                "cantidad":1,
+                "nombre":"pantalones bla bla"
+            }
+        }
+    },
+    "0002":{
+        "nombre":"roberto",
+        "apellido":"menendez",
+        "usuario":"mmndez",
+        "contraseña":"123",
+        "direccion":"samanes",
+        "correo":"robertoM@gmail.com",
+        "ciudad":"Guayaquil",
+        "telefono":"098124589",
+        "esAdmin":false,
+        "carrito":{
+            "001":{
+                "cantidad":2,
+                "nombre":"Camiseta estampada roja"
+            },
+            "780":{
+                "cantidad":1,
+                "nombre":"pantalones bla bla"
+            }
+        }
+    }
+}
