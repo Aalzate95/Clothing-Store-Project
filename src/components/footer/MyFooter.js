@@ -7,6 +7,7 @@ export default class MyFooter extends React.Component{
     }
     render(){
         return(
+            <footer>
             <div className="Footer"> 
                 <div className="MyFooter">
                     <div className="CardFooter" >
@@ -43,6 +44,7 @@ export default class MyFooter extends React.Component{
                     <p>¡Entérate de nuestras promociones aquí!</p>
                 </div>
             </div>
+            </footer>
         )
     }
 

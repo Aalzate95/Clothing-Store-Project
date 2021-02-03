@@ -1,7 +1,8 @@
 import React from 'react'
 import data from '../../data/aboutUs.json'
 import './AboutUs.css'
-
+import NavBar from '../../components/navBar/NavBar'
+import MyFooter from '../../components/footer/MyFooter'
 
 export default class AboutUs extends React.Component{
     constructor(props){
@@ -13,7 +14,8 @@ export default class AboutUs extends React.Component{
     render(){
         const general = this.state.general;
         return(
-
+            <div>
+                <NavBar/>
             <div className="About">
                 <div>
                     <div className="About-banner">
@@ -36,6 +38,10 @@ export default class AboutUs extends React.Component{
                     </div>
                 </div>
             </div>
+            <div className="footer">
+            <MyFooter/>
+    </div>
+</div>
         )
     }
 }

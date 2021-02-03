@@ -3,6 +3,8 @@ import HomeBanner from '../../components/HomeBanner'
 import dataPrincipal from '../../data/principal.json'
 import MyCard from '../../components/MyCard'
 import './Home.css'
+import NavBar from '../../components/navBar/NavBar'
+import MyFooter from '../../components/footer/MyFooter'
 
 export default class Home extends React.Component{
     constructor(props){
@@ -16,8 +18,8 @@ export default class Home extends React.Component{
     render(){
         const {banner,tendencias} = this.state;
         return(
-            
-            <div className="Home">
+            <div className = "Home">
+                <NavBar/>
                 <div name= "Cabecera">
                     <HomeBanner
                         titulo = {banner.title}
@@ -47,13 +49,13 @@ export default class Home extends React.Component{
                     
                 </div>
                 
-                <section id="anuncios">
-                    <div className="anuncios">
+                <div className="anuncios">
                     <img alt= "anuncio" src="https://www.deportesapalategui.com/blog/wp-content/uploads/2014/03/asics-compresion.jpg"></img>
-                    </div>
-                </section>
-
-
+                </div>
+                
+                <div className="footer">
+                <MyFooter/>
+                </div>
             </div>
         )
     }

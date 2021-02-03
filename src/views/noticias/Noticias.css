@@ -50,7 +50,9 @@
     cursor: pointer;
     filter: opacity(.6);
   }
-
+  .footer{
+    margin-top:200px;
+  }
   
 
   /*mobile devices*/

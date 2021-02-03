@@ -4,6 +4,9 @@ import Data from '../../data/shop.json'
 import DataCategorias from '../../data/categorias.json'
 import Modal from '../../components/modal/Modal';
 import Pagination from '../../components/pagination/Pagination';
+import NavBar from '../../components/navBar/NavBar'
+import MyFooter from '../../components/footer/MyFooter'
+
 const Shop = () => {
     const [show, setShow] = useState(false);
     const [idModal,setModal] = useState(null);
@@ -43,6 +46,8 @@ const Shop = () => {
     }
 
     return ( 
+        <div>
+                <NavBar/>
         <div className="Shop">
            <div className="Shop-banner">
                 <img
@@ -68,6 +73,10 @@ const Shop = () => {
                 </div>
             </div>
         </div>
+        <div className="footer">
+                        <MyFooter/>
+                </div>
+            </div>
      );    
 }
  

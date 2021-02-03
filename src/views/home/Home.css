@@ -1,7 +1,33 @@
+[name="Cabecera"]{
+  display:grid;
+  grid-template-columns:100%;
+}
+
+.principalTendencias{
+  display: grid;
+  margin: 20px 10% 0 10%;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.Home{
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+}
+
+[name="TxtTendencias"]{
+  color: gray;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  margin: 20px 10%;
+}
+
 .anuncios{
   width:100%;
   height: 81px;
-  position: absolute;
-  bottom: 60;
   text-align: center;
+}
+
+.footer{
+  margin-top:200px;
 }

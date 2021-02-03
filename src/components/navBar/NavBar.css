@@ -1,0 +1,48 @@
+.NavBar {
+    display: grid;
+    grid-template-columns:1fr 90%;
+  }
+  .NavBar ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 15px;
+  }
+  #NavegationBar {
+    display: block;
+    width: 100%;
+    margin:0;
+    text-align: right;
+    height: 70px;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+  }
+  
+  #NavegationBar>ul{
+    padding-top: 10px;
+    display:inline-flex;
+    list-style-type: none;
+    margin: 0;
+  }
+  
+  #NavegationBar>ul>li>a {
+    color:gray;
+    text-decoration: none
+  }
+  
+  #NavegationBar>ul>li>a:hover {
+    color: rgb(78, 78, 78);
+  }
+  
+  #NavegationBar>ul>li{
+    padding: 16px;
+    text-decoration: none;
+  }
+  .ICarrito{
+    width: 20px;
+    height: 20px;
+  }
+  .LogoHome{
+    width: 40px;
+    height: 40px;
+  }

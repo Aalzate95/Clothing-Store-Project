@@ -59,3 +59,18 @@
   .About-body>div>div>iframe{
     width: 100%; 
   } 
+
+  .AboutUs{
+    text-align: center;
+  }
+  
+  .AboutUs-body{
+    margin:5% 0 0 0;
+  }
+  
+  .AboutUs-body h3{
+    font-weight: bold;
+  }
+  .AboutUs-Map{
+    margin: 5% 15% 0 15%;
+  }

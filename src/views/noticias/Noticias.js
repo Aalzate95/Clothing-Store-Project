@@ -1,12 +1,15 @@
 import React from 'react'
 import './Noticias.css'
-
+import NavBar from '../../components/navBar/NavBar'
+import MyFooter from '../../components/footer/MyFooter'
 
 export default class Shop extends React.Component{
 
     render() {
 
         return(
+            <div>
+                <NavBar/>
             <div className="Noticias">
 
                 <div className="Shop-banner">
@@ -40,6 +43,10 @@ export default class Shop extends React.Component{
                    
 
             </div>
+            <div className="footer">
+            <MyFooter/>
+    </div>
+</div>
     )
     }
     

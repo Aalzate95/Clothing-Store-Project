@@ -2,6 +2,7 @@
 .Login{
     display:flex;
     flex-direction:column;
+    margin:5% 0 5% 0;
     padding:5% 0 5% 0;
     background: lightgray;
   }
@@ -35,7 +36,7 @@
     margin-bottom: 15px;
     box-sizing:border-box;
   }
-  .LoginCard input[type="submit"] {
+  .LoginCard button[type="submit"] {
     width: 100%;
     padding: 15px;
     background-color: #535b63;
@@ -45,4 +46,12 @@
     font-weight: bold;
     color: #ffffff;
   }
- 
+
+
+ .footer{
+    margin-top:200px;
+  }
+  .LoginMessage{
+    text-align: center;
+    margin: 20px 0 0 0;
+  }

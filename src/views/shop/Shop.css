@@ -85,7 +85,9 @@
     display:grid;
     grid-template-columns:1fr 1fr
   }
-
+  .footer{
+    margin-top:200px;
+  }
   /*mobile devices*/
   @media only screen and (max-width: 600px) {
     .Shop-body{
