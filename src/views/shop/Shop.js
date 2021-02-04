@@ -17,13 +17,12 @@ const Shop = () => {
     const ShowModal = (e) => {
         setShow(true)
         setModal(1)
-        
       };
     
     const loadData = async () =>{
         const data = await fetchproductolista();
-        const productos =  data.json()
-        setData(productos)
+        console.log(data)
+        setData(data )
     }
 
     React.useEffect(() => (
@@ -38,7 +37,7 @@ const Shop = () => {
         let item;
         if (idModal!==null){
             item = Data[idModal]
-            let descuento = item.descuento*100 +"%"
+            let descuento = item.product_descount*100 +"%"
             return(
                 <div className="Modal-Producto">
                     <div className="Imagen-Producto">

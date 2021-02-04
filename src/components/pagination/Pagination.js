@@ -31,10 +31,10 @@ const Pagination = (props) => {
 
     const renderElementos = elementos.map((id, index) => {
         let contenido = props.data[id];
-        let descuento =  contenido.descuento*100+"%";
-        let precioAntes = "$"+contenido.precio;
-        let precioAhora = "$"+ (contenido.precio - contenido.precio*contenido.descuento)
-        const showHideDescuento = contenido.descuento!==0 ? {display: "block"} : {display:"none"};
+        let descuento =  contenido.product_descount*100+"%";
+        let precioAntes = "$"+contenido.product_price;
+        let precioAhora = "$"+ (contenido.product_price - contenido.product_price*contenido.product_descount)
+        const showHideDescuento = contenido.product_descount!==0 ? {display: "block"} : {display:"none"};
         return (
           <div key={index} className="Card" id={id}>
             <div className="price-container" style={showHideDescuento}>
@@ -44,7 +44,7 @@ const Pagination = (props) => {
             </div>
 
               <div className="MyCardImage">
-                    <img src={contenido.url} alt={contenido.name}/>
+                    <img src="https://p1.pxfuel.com/preview/966/722/399/tennis-man-background-young.jpg" alt={contenido.product_name}/>
                     <div id="Overlay">
                         <div className="Añadir">
                             <button >Añadir al carrito</button>
@@ -55,7 +55,7 @@ const Pagination = (props) => {
                     </div>
               </div>
               <div className="Descripcion">
-                <h4 id="titulo">{contenido.name}</h4>
+                <h4 id="titulo">{contenido.product_name}</h4>
                 <div className="Precios">
                     <p><b>Antes:</b><s>{precioAntes}</s></p>
                     <p><b>Ahora:</b> {precioAhora}</p>
