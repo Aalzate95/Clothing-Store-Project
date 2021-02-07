@@ -3,7 +3,7 @@ import './Login.css'
 import {Redirect } from 'react-router-dom';
 import NavBar from '../../components/navBar/NavBar'
 import MyFooter from '../../components/footer/MyFooter'
-
+import {fetchlogin} from '../../api/Api'
 
 const usuarios = {
     "001":{"user":"admin","pass":"admin","isAdmin":true},
@@ -11,7 +11,8 @@ const usuarios = {
 }
 
 const Login = ({usuario,contraseña,setUsuario,setContraseña,setId}) => {
-    
+
+    const [accesoAdmin,setAccesoAdmin] = useState(false)
     const [isSuccess,setSuccess] = useState(false)
     const [message,setMessage] = useState('')
 
@@ -22,34 +23,27 @@ const Login = ({usuario,contraseña,setUsuario,setContraseña,setId}) => {
     const ingresarContraseña = (e) =>{
         setContraseña(e.target.value)
     }
-
 // esto hay que cambiarlo solo por la respuesta del api
-    const validarUsuario = (usuario, contraseña) =>{
-        let resultado = false
-        Object.keys(usuarios).forEach((id)=>{
-            if (usuarios[id]["user"] === usuario){
-                
-                if (contraseña === usuarios[id]["pass"]){
-                    resultado = true
-                    setId(id)
-                } 
-            }
-            
-        })
-        return resultado
+    const validarUsuario = async (usuario, contraseña) =>{
+        const resultado = await fetchlogin(usuario,contraseña)
+        setSuccess(resultado["logeado"])
     }
 
-    const handleSubmit= (e) => {
+   const handleSubmit= (e) => {
         e.preventDefault();
-        if (validarUsuario(usuario, contraseña)){
+        let resultado = validarUsuario(usuario, contraseña)
+        if (resultado["logeado"]){
+            console.log("entra")
             setSuccess(true)
+            setAccesoAdmin(resultado["admin"])
         }
         else{
             setMessage("Datos Incorrectos, vuelva a intentarlo...")
         }
+    }
         // window.location.href = "http://localhost:3001/app/dashboard"
         /* return <Redirect to="/Dashboard" render={()=> <Login />} /> */
-      }
+      
       
     return ( 
         <div>
@@ -64,7 +58,7 @@ const Login = ({usuario,contraseña,setUsuario,setContraseña,setId}) => {
                     </form>
                     <a name="RecuperarContraseña" href="..">Recuperar contraseña ?</a>
                 </div>
-                {!isSuccess ?<div className="LoginMessage">{message}</div> : <Redirect to='/Redireccion' />}
+                {(!isSuccess) ?<div className="LoginMessage">{message}</div> : <Redirect to='/admin/'/>}
             </div>
             <div className="footer">
                     <MyFooter/>

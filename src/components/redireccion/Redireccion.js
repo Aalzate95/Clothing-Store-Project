@@ -8,7 +8,7 @@ const usuarios = {
 
 const Redireccion = ({id}) => {
 
-    const [accesoAdmin,setAccesoAdmin] = useState(usuarios[id]["isAdmin"])
+    const [accesoAdmin,setAccesoAdmin] = useState(true)
 
     return (
         accesoAdmin ?<Redirect to='/admin/'/> : <Redirect to='/' />

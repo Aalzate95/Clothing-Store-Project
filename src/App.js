@@ -83,7 +83,7 @@ function App() {
               />
             </Route>
 
-            <Route exact path="/admin/Clientes/">
+            <Route exact path="/admin/Clientes">
                 <Clientes 
                     id={id}
                 />

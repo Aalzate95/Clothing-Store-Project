@@ -8,7 +8,6 @@ console.log(items)
 const Clientes = ({id}) => {
     const [paginaActual,setPagActual] = useState(1);
     const [cantPorPag,setCantPorPag] =  useState(10);
-    setCantPorPag(10)
     
     const handleClick =(e)=>{
         setPagActual(e)

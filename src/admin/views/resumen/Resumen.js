@@ -1,8 +1,9 @@
-import React,{useState} from 'react'
+import React,{useState, useEffect} from 'react'
 import Dashboard from '../../components/dashboard/Dashboard'
 import './Resumen.css'
 import { MdPeopleOutline,MdAttachMoney,MdShoppingCart } from "react-icons/md";
 import AnyChart from 'anychart-react'
+import {fetchTotalUsuarios, fetchObtenerGananciaEstimada, fetchObtenerGananciaReal,fetchProductosUltimosCinco,fetchproductolista} from '../../../api/Api'
 
 const UltimosProductos = {
     "0029":{"name":"producto1","stock":3,"url":"http://www.pequenomundo.cl/wp-content/themes/childcare/images/default.png"},
@@ -13,12 +14,39 @@ const UltimosProductos = {
 }
 
 
-const Resumen = ({id}) => {
-    const [totClientes, setTotClientes] = useState(10)
-    const [gananciaReal, setGananciaReal] = useState(38000)
-    const [totProductos, setTotProductos] = useState(30)
-    const [gananciaEstimada, setGananciaEstimada] = useState(100000)
+const Resumen = () => {
+    const [totClientes, setTotClientes] = useState(0)
+    const [gananciaReal, setGananciaReal] = useState(0)
+    const [totProductos, setTotProductos] = useState(0)
+    const [gananciaEstimada, setGananciaEstimada] = useState(0)
     
+    const loadUsuariosTotal = async () =>{
+        const data = await fetchTotalUsuarios();
+        console.log(data)
+        setTotClientes(data["Total"])
+    }
+
+    const loadProductosTotal = async () =>{
+        const data = await fetchproductolista();
+        setTotProductos(Object.keys(data).length)
+    }
+
+    const loadGananciaEstimada = async () =>{
+        const data = await fetchObtenerGananciaEstimada();
+        setGananciaEstimada(0)
+    }
+
+    const loadGananciaReal = async () =>{
+        const data = await fetchObtenerGananciaReal();
+        setGananciaReal(data["Total"] )
+    }
+
+    React.useEffect(() => (
+        loadUsuariosTotal(),
+        loadProductosTotal(),
+        loadGananciaEstimada(),
+        loadGananciaReal()
+    ),[])
 
     const renderProductos = Object.keys(UltimosProductos).map((item)=>{
         return(

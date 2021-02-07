@@ -52,3 +52,29 @@
 .col9 {
     padding:0 10px 0 10px;
 }
+
+.renderContenido{
+
+}
+.añadirProducto{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width:100%;
+}
+
+.fila{
+    display:flex;
+    align-items: center;
+    margin:20px;
+}
+
+.fila label{
+    margin:20px;
+}
+
+.button-añadir{
+    margin-bottom:20px;
+    text-align:right;
+}
